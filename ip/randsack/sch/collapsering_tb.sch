@@ -49,7 +49,7 @@ C {devices/vsource.sym} 1130 -1360 0 0 {name=V2 value="PWL(0n 0.0 30n 1.8)"}
 C {devices/gnd.sym} 1130 -1230 0 0 {name=l21 lab=GND}
 C {devices/gnd.sym} 1130 -1310 0 0 {name=l20 lab=VGND}
 C {devices/title-2.sym} 0 -40 0 0 {name=l26 author="Harrison Pham" rev=1.0}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/collapsering.sym} 1690 -1120 0 0 {name=x1}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/collapsering.sym} 1690 -1120 0 0 {name=x1}
 C {devices/vdd.sym} 1480 -1050 0 0 {name=l1 lab=VPWR}
 C {devices/lab_wire.sym} 1910 -1150 0 0 {name=l3 sig_type=std_logic lab=clkout}
 C {devices/lab_wire.sym} 1500 -1110 0 0 {name=l4 sig_type=std_logic lab=start}

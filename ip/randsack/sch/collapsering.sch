@@ -216,31 +216,7 @@ N 1510 -800 1510 -760 { lab=TRIMB[23]}
 N 1510 -800 1520 -800 { lab=TRIMB[23]}
 C {sky130_stdcells/nand2_4.sym} 440 -1400 0 0 {name=x21 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_4.sym} 440 -1000 0 0 {name=x47 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 680 -1400 0 0 {name=x1}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1010 -1400 0 0 {name=x2}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1340 -1400 0 0 {name=x3}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1670 -1400 0 0 {name=x4}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 2000 -1400 0 0 {name=x5}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 2330 -1400 0 0 {name=x6}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 2660 -1400 0 0 {name=x7}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 2990 -1400 0 0 {name=x8}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 680 -1000 0 0 {name=x9}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1010 -1000 0 0 {name=x10}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1340 -1000 0 0 {name=x11}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1670 -1000 0 0 {name=x12}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 2000 -1000 0 0 {name=x13}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 2330 -1000 0 0 {name=x14}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 2660 -1000 0 0 {name=x15}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 2990 -1000 0 0 {name=x16}
 C {devices/title-2.sym} 0 -40 0 0 {name=l26 author="Harrison Pham" rev=1.0}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 680 -1220 0 0 {name=x17}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1010 -1220 0 0 {name=x18}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1340 -1220 0 0 {name=x19}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1670 -1220 0 0 {name=x20}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 680 -830 0 0 {name=x26}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1010 -830 0 0 {name=x27}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1340 -830 0 0 {name=x28}
-C {/home/harrison/workspace/randsack/verilog/rtl/randsack/sch/triminv.sym} 1670 -830 0 0 {name=x29}
 C {devices/lab_wire.sym} 3200 -830 0 0 {name=l18 sig_type=std_logic lab=outb}
 C {devices/lab_wire.sym} 3200 -1220 0 0 {name=l9 sig_type=std_logic lab=outa}
 C {sky130_stdcells/mux2_4.sym} 740 -580 0 0 {name=x34 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
@@ -301,3 +277,27 @@ C {devices/lab_pin.sym} 1490 -780 0 0 {name=l52 sig_type=std_logic lab=TRIMB[22]
 C {devices/lab_pin.sym} 1490 -760 0 0 {name=l53 sig_type=std_logic lab=TRIMB[23]}
 C {devices/ipin.sym} 300 -1630 0 0 {name=p4 lab=TRIMA[23:0]}
 C {devices/ipin.sym} 300 -1610 0 0 {name=p5 lab=TRIMB[23:0]}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 680 -1400 0 0 {name=x1}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1010 -1400 0 0 {name=x2}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1340 -1400 0 0 {name=x3}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1670 -1400 0 0 {name=x4}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 2000 -1400 0 0 {name=x5}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 2330 -1400 0 0 {name=x6}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 2660 -1400 0 0 {name=x7}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 2990 -1400 0 0 {name=x8}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 680 -1220 0 0 {name=x9}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1010 -1220 0 0 {name=x10}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1340 -1220 0 0 {name=x11}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1670 -1220 0 0 {name=x12}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 680 -1000 0 0 {name=x13}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1010 -1000 0 0 {name=x14}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1340 -1000 0 0 {name=x15}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1670 -1000 0 0 {name=x16}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 2000 -1000 0 0 {name=x17}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 2330 -1000 0 0 {name=x18}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 2660 -1000 0 0 {name=x19}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 2990 -1000 0 0 {name=x20}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 680 -830 0 0 {name=x22}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1010 -830 0 0 {name=x23}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1340 -830 0 0 {name=x24}
+C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1670 -830 0 0 {name=x25}
