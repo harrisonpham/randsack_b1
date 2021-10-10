@@ -1,0 +1,5 @@
+set XSCHEM_LIBRARY_PATH {}
+append XSCHEM_LIBRARY_PATH :${XSCHEM_SHAREDIR}/xschem_library
+append XSCHEM_LIBRARY_PATH :/home/harrison/workspace/xschem_sky130
+
+set editor {code}
