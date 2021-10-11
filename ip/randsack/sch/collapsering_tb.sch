@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-N 1130 -1000 1130 -970 { lab=GND}
+N 1130 -1000 1130 -970 { lab=VGND}
 N 1130 -1410 1130 -1390 { lab=VPWR}
 N 1130 -1110 1130 -1060 { lab=start}
 N 1130 -1330 1130 -1310 { lab=VGND}
@@ -30,10 +30,12 @@ N 1430 -1390 1540 -1390 { lab=trima[1:0]}
 N 1350 -1390 1370 -1390 { lab=VPWR}
 N 1350 -1410 1350 -1390 { lab=VPWR}
 C {devices/vsource.sym} 1130 -1030 0 0 {name=V1 value="PULSE(0 1.8 100ns 1ns 1ns 9000ns 9000ns)"}
-C {devices/gnd.sym} 1130 -970 0 0 {name=l2 lab=GND}
 C {devices/code_shown.sym} 120 -360 0 0 {name=SPICE only_toplevel=false value="
 .lib /home/harrison/workspace/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /home/harrison/workspace/sky130/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+.option TEMP=27
+.option RELTOL=1.0E-1
 
 .control
 save all
@@ -61,7 +63,8 @@ C {devices/gnd.sym} 1350 -1300 0 0 {name=l9 lab=VGND}
 C {devices/lab_wire.sym} 1530 -1320 0 0 {name=l12 sig_type=std_logic lab=trima[23:2]}
 C {devices/lab_wire.sym} 1530 -1390 0 0 {name=l14 sig_type=std_logic lab=trima[1:0]}
 C {devices/vdd.sym} 1350 -1410 0 0 {name=l13 lab=VPWR}
-C {devices/vsource.sym} 1400 -1390 3 0 {name=V3 value=0}
-C {devices/vsource.sym} 1400 -1320 3 0 {name=V4 value=0}
-C {devices/vsource.sym} 1400 -1250 3 0 {name=V5 value=0}
-C {devices/vsource.sym} 1170 -1250 3 0 {name=V6 value=0}
+C {devices/vsource.sym} 1170 -1250 1 0 {name=V6 value=0}
+C {devices/connect.sym} 1400 -1390 1 0 {name=R1[1:0] m=1}
+C {devices/connect.sym} 1400 -1320 1 0 {name=R2[23:2] m=1}
+C {devices/connect.sym} 1400 -1250 1 0 {name=R3[23:0] m=1}
+C {devices/gnd.sym} 1130 -970 0 0 {name=l2 lab=VGND}

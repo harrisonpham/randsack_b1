@@ -51,25 +51,12 @@ N 340 -980 340 -730 { lab=outa}
 N 340 -730 3270 -730 { lab=outa}
 N 3270 -1220 3270 -730 { lab=outa}
 N 3140 -1220 3270 -1220 { lab=outa}
-N 420 -560 450 -560 { lab=outa}
-N 420 -730 420 -560 { lab=outa}
-N 630 -560 700 -560 { lab=div2}
-N 420 -600 700 -600 { lab=outa}
-N 420 -510 650 -510 { lab=#net25}
-N 420 -540 420 -510 { lab=#net25}
-N 420 -540 450 -540 { lab=#net25}
-N 630 -540 650 -540 { lab=#net25}
-N 650 -540 650 -510 { lab=#net25}
-N 780 -580 880 -580 { lab=clkmux}
 N 960 -580 1010 -580 { lab=CLKBUFOUT}
 N 1820 -1220 3140 -1220 { lab=outa}
 N 1820 -830 3140 -830 { lab=outb}
 N 300 -1380 380 -1380 { lab=START}
 N 340 -1020 380 -1020 { lab=START}
 N 340 -1380 340 -1020 { lab=START}
-N 650 -470 670 -470 { lab=DIV2EN}
-N 670 -520 670 -470 { lab=DIV2EN}
-N 670 -520 700 -520 { lab=DIV2EN}
 N 500 -1350 510 -1350 { lab=TRIMA[0]}
 N 510 -1380 510 -1350 { lab=TRIMA[0]}
 N 510 -1380 530 -1380 { lab=TRIMA[0]}
@@ -214,19 +201,16 @@ N 1500 -810 1520 -810 { lab=TRIMB[22]}
 N 1490 -760 1510 -760 { lab=TRIMB[23]}
 N 1510 -800 1510 -760 { lab=TRIMB[23]}
 N 1510 -800 1520 -800 { lab=TRIMB[23]}
+N 810 -580 880 -580 {}
+N 810 -730 810 -580 {}
 C {sky130_stdcells/nand2_4.sym} 440 -1400 0 0 {name=x21 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_4.sym} 440 -1000 0 0 {name=x47 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/title-2.sym} 0 -40 0 0 {name=l26 author="Harrison Pham" rev=1.0}
 C {devices/lab_wire.sym} 3200 -830 0 0 {name=l18 sig_type=std_logic lab=outb}
 C {devices/lab_wire.sym} 3200 -1220 0 0 {name=l9 sig_type=std_logic lab=outa}
-C {sky130_stdcells/mux2_4.sym} 740 -580 0 0 {name=x34 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/dfxbp_2.sym} 540 -550 0 0 {name=x36 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/lab_wire.sym} 850 -580 0 0 {name=l43 sig_type=std_logic lab=clkmux}
-C {devices/lab_wire.sym} 680 -560 0 0 {name=l45 sig_type=std_logic lab=div2}
 C {sky130_stdcells/clkbuf_4.sym} 920 -580 0 0 {name=x35 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/opin.sym} 1010 -580 0 0 {name=p1 lab=CLKBUFOUT}
 C {devices/ipin.sym} 300 -1380 0 0 {name=p2 lab=START}
-C {devices/ipin.sym} 650 -470 0 0 {name=p3 lab=DIV2EN}
 C {devices/lab_pin.sym} 500 -1350 0 0 {name=l1 sig_type=std_logic lab=TRIMA[0]}
 C {devices/lab_pin.sym} 500 -1330 0 0 {name=l2 sig_type=std_logic lab=TRIMA[1]}
 C {devices/lab_pin.sym} 830 -1350 0 0 {name=l3 sig_type=std_logic lab=TRIMA[2]}
