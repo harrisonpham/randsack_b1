@@ -198,93 +198,93 @@ N 1400 -1120 1420 -1120 { lab=TRIMB[22]}
 N 1390 -1070 1410 -1070 { lab=TRIMB[23]}
 N 1410 -1110 1410 -1070 { lab=TRIMB[23]}
 N 1410 -1110 1420 -1110 { lab=TRIMB[23]}
-N 2080 -890 2100 -890 { lab=#net26}
-N 2100 -890 2100 -820 { lab=#net26}
-N 2100 -820 2100 -740 { lab=#net26}
-N 2340 -740 2400 -740 { lab=#net27}
-N 2140 -800 2160 -800 { lab=#net28}
-N 2140 -800 2140 -770 { lab=#net28}
-N 2140 -770 2360 -770 { lab=#net28}
-N 2360 -800 2360 -770 { lab=#net28}
-N 2340 -800 2360 -800 { lab=#net28}
-N 2140 -720 2160 -720 { lab=#net29}
-N 2140 -720 2140 -690 { lab=#net29}
-N 2140 -690 2360 -690 { lab=#net29}
-N 2360 -720 2360 -690 { lab=#net29}
-N 2340 -720 2360 -720 { lab=#net29}
-N 2100 -740 2160 -740 { lab=#net26}
-N 2100 -820 2160 -820 { lab=#net26}
-N 2380 -720 2400 -720 { lab=#net30}
-N 2380 -720 2380 -690 { lab=#net30}
-N 2380 -690 2600 -690 { lab=#net30}
-N 2600 -720 2600 -690 { lab=#net30}
-N 2580 -720 2600 -720 { lab=#net30}
-N 2100 -860 2740 -860 { lab=#net26}
-N 2340 -820 2740 -820 { lab=#net31}
-N 2580 -740 2640 -740 { lab=#net32}
-N 2640 -780 2640 -740 { lab=#net32}
-N 2640 -780 2740 -780 { lab=#net32}
-N 1970 -890 2000 -890 { lab=#net33}
-N 2340 -660 2400 -660 { lab=#net34}
-N 2140 -640 2160 -640 { lab=#net35}
-N 2140 -640 2140 -610 { lab=#net35}
-N 2140 -610 2360 -610 { lab=#net35}
-N 2360 -640 2360 -610 { lab=#net35}
-N 2340 -640 2360 -640 { lab=#net35}
-N 2380 -640 2400 -640 { lab=#net36}
-N 2380 -640 2380 -610 { lab=#net36}
-N 2380 -610 2600 -610 { lab=#net36}
-N 2600 -640 2600 -610 { lab=#net36}
-N 2580 -640 2600 -640 { lab=#net36}
-N 2580 -660 2640 -660 { lab=#net37}
-N 2620 -640 2640 -640 { lab=#net38}
-N 2620 -640 2620 -610 { lab=#net38}
-N 2620 -610 2840 -610 { lab=#net38}
-N 2840 -640 2840 -610 { lab=#net38}
-N 2820 -640 2840 -640 { lab=#net38}
-N 2740 -860 2940 -860 { lab=#net26}
-N 2750 -820 2940 -820 { lab=#net31}
-N 2740 -820 2750 -820 { lab=#net31}
-N 2740 -780 2940 -780 { lab=#net32}
-N 2820 -660 2860 -660 { lab=#net39}
-N 2860 -740 2860 -660 { lab=#net39}
-N 2860 -740 2940 -740 { lab=#net39}
-N 2100 -740 2100 -660 { lab=#net26}
-N 2100 -660 2160 -660 { lab=#net26}
-N 2940 -740 3010 -740 { lab=#net39}
-N 2940 -780 3010 -780 { lab=#net32}
-N 2940 -820 3010 -820 { lab=#net31}
-N 2940 -860 3010 -860 { lab=#net26}
+N 2080 -890 2100 -890 { lab=clk_ff0}
+N 2100 -890 2100 -820 { lab=clk_ff0}
+N 2100 -820 2100 -740 { lab=clk_ff0}
+N 2340 -740 2400 -740 { lab=#net26}
+N 2140 -800 2160 -800 { lab=#net27}
+N 2140 -800 2140 -770 { lab=#net27}
+N 2140 -770 2360 -770 { lab=#net27}
+N 2360 -800 2360 -770 { lab=#net27}
+N 2340 -800 2360 -800 { lab=#net27}
+N 2140 -720 2160 -720 { lab=#net28}
+N 2140 -720 2140 -690 { lab=#net28}
+N 2140 -690 2360 -690 { lab=#net28}
+N 2360 -720 2360 -690 { lab=#net28}
+N 2340 -720 2360 -720 { lab=#net28}
+N 2100 -740 2160 -740 { lab=clk_ff0}
+N 2100 -820 2160 -820 { lab=clk_ff0}
+N 2380 -720 2400 -720 { lab=#net29}
+N 2380 -720 2380 -690 { lab=#net29}
+N 2380 -690 2600 -690 { lab=#net29}
+N 2600 -720 2600 -690 { lab=#net29}
+N 2580 -720 2600 -720 { lab=#net29}
+N 2100 -860 2740 -860 { lab=clk_ff0}
+N 2340 -820 2740 -820 { lab=clk_ff1}
+N 2580 -740 2640 -740 { lab=clk_ff2}
+N 2640 -780 2640 -740 { lab=clk_ff2}
+N 2640 -780 2740 -780 { lab=clk_ff2}
+N 1970 -890 2000 -890 { lab=#net30}
+N 2340 -660 2400 -660 { lab=#net31}
+N 2140 -640 2160 -640 { lab=#net32}
+N 2140 -640 2140 -610 { lab=#net32}
+N 2140 -610 2360 -610 { lab=#net32}
+N 2360 -640 2360 -610 { lab=#net32}
+N 2340 -640 2360 -640 { lab=#net32}
+N 2380 -640 2400 -640 { lab=#net33}
+N 2380 -640 2380 -610 { lab=#net33}
+N 2380 -610 2600 -610 { lab=#net33}
+N 2600 -640 2600 -610 { lab=#net33}
+N 2580 -640 2600 -640 { lab=#net33}
+N 2580 -660 2640 -660 { lab=#net34}
+N 2620 -640 2640 -640 { lab=#net35}
+N 2620 -640 2620 -610 { lab=#net35}
+N 2620 -610 2840 -610 { lab=#net35}
+N 2840 -640 2840 -610 { lab=#net35}
+N 2820 -640 2840 -640 { lab=#net35}
+N 2740 -860 2940 -860 { lab=clk_ff0}
+N 2750 -820 2940 -820 { lab=clk_ff1}
+N 2740 -820 2750 -820 { lab=clk_ff1}
+N 2740 -780 2940 -780 { lab=clk_ff2}
+N 2820 -660 2860 -660 { lab=clk_ff3}
+N 2860 -740 2860 -660 { lab=clk_ff3}
+N 2860 -740 2940 -740 { lab=clk_ff3}
+N 2100 -740 2100 -660 { lab=clk_ff0}
+N 2100 -660 2160 -660 { lab=clk_ff0}
+N 2940 -740 3010 -740 { lab=clk_ff3}
+N 2940 -780 3010 -780 { lab=clk_ff2}
+N 2940 -820 3010 -820 { lab=clk_ff1}
+N 2940 -860 3010 -860 { lab=clk_ff0}
 N 2990 -700 3010 -700 { lab=CLKMUX[0]}
 N 2990 -670 3010 -670 { lab=CLKMUX[1]}
-N 1860 -910 1890 -910 { lab=#net40}
-N 1770 -870 1890 -870 { lab=#net41}
+N 1860 -910 1890 -910 { lab=#net36}
+N 1770 -870 1890 -870 { lab=#net37}
 N 1870 -830 1890 -830 { lab=CLKMUX[2]}
 N 110 -1690 120 -1690 { lab=START}
 N 3200 -800 3230 -800 { lab=CLKBUFOUT}
-N 3090 -800 3120 -800 { lab=#net42}
-N 1720 -1530 1750 -1530 { lab=#net43}
+N 3090 -800 3120 -800 { lab=#net38}
+N 1720 -1530 1750 -1530 { lab=#net39}
 N 1720 -1480 1730 -1480 { lab=TRIMA[24]}
 N 1730 -1510 1730 -1480 { lab=TRIMA[24]}
 N 1730 -1510 1750 -1510 { lab=TRIMA[24]}
 N 1720 -1460 1740 -1460 { lab=TRIMA[25]}
 N 1740 -1500 1740 -1460 { lab=TRIMA[25]}
 N 1740 -1500 1750 -1500 { lab=TRIMA[25]}
-N 2050 -1530 2080 -1530 { lab=#net44}
+N 2050 -1530 2080 -1530 { lab=#net40}
 N 2050 -1480 2060 -1480 { lab=TRIMA[26]}
 N 2060 -1510 2060 -1480 { lab=TRIMA[26]}
 N 2060 -1510 2080 -1510 { lab=TRIMA[26]}
 N 2050 -1460 2070 -1460 { lab=TRIMA[27]}
 N 2070 -1500 2070 -1460 { lab=TRIMA[27]}
 N 2070 -1500 2080 -1500 { lab=TRIMA[27]}
-N 1720 -1140 1750 -1140 { lab=#net45}
+N 1720 -1140 1750 -1140 { lab=#net41}
 N 1720 -1090 1730 -1090 { lab=TRIMB[24]}
 N 1730 -1120 1730 -1090 { lab=TRIMB[24]}
 N 1730 -1120 1750 -1120 { lab=TRIMB[24]}
 N 1720 -1070 1740 -1070 { lab=TRIMB[25]}
 N 1740 -1110 1740 -1070 { lab=TRIMB[25]}
 N 1740 -1110 1750 -1110 { lab=TRIMB[25]}
-N 2050 -1140 2080 -1140 { lab=#net46}
+N 2050 -1140 2080 -1140 { lab=#net42}
 N 2050 -1090 2060 -1090 { lab=TRIMB[26]}
 N 2060 -1120 2060 -1090 { lab=TRIMB[26]}
 N 2060 -1120 2080 -1120 { lab=TRIMB[26]}
@@ -390,12 +390,9 @@ C {sky130_stdcells/mux4_2.sym} 3050 -800 0 0 {name=x30 VGND=VGND VNB=VNB VPB=VPB
 C {sky130_stdcells/dfxbp_2.sym} 2250 -650 0 0 {name=x31 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/dfxbp_2.sym} 2490 -650 0 0 {name=x32 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/dfxbp_2.sym} 2730 -650 0 0 {name=x33 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/ipin.sym} 2990 -700 0 0 {name=p3 lab=CLKMUX[0]}
-C {devices/ipin.sym} 2990 -670 0 0 {name=p6 lab=CLKMUX[1]}
 C {sky130_stdcells/mux2_2.sym} 1930 -890 0 0 {name=x34 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/clkbuf_2.sym} 1820 -910 0 0 {name=x36 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/clkbuf_2.sym} 1730 -870 0 0 {name=x37 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/ipin.sym} 1870 -830 0 0 {name=p7 lab=CLKMUX[2]}
 C {sky130_stdcells/clkbuf_2.sym} 160 -1690 0 0 {name=x38 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 1720 -1480 0 0 {name=l43 sig_type=std_logic lab=TRIMA[24]}
 C {devices/lab_pin.sym} 1720 -1460 0 0 {name=l45 sig_type=std_logic lab=TRIMA[25]}
@@ -409,3 +406,11 @@ C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 1900 -1140 0 0
 C {devices/lab_pin.sym} 2050 -1090 0 0 {name=l58 sig_type=std_logic lab=TRIMB[26]}
 C {devices/lab_pin.sym} 2050 -1070 0 0 {name=l59 sig_type=std_logic lab=TRIMB[27]}
 C {/home/harrison/workspace/randsack/ip/randsack/sch/triminv.sym} 2230 -1140 0 0 {name=x42}
+C {devices/lab_wire.sym} 2980 -860 0 0 {name=l60 sig_type=std_logic lab=clk_ff0}
+C {devices/lab_wire.sym} 2980 -820 0 0 {name=l61 sig_type=std_logic lab=clk_ff1}
+C {devices/lab_wire.sym} 2980 -780 0 0 {name=l62 sig_type=std_logic lab=clk_ff2}
+C {devices/lab_wire.sym} 2980 -740 0 0 {name=l63 sig_type=std_logic lab=clk_ff3}
+C {devices/ipin.sym} 200 -1900 0 0 {name=p8 lab=CLKMUX[2:0]}
+C {devices/lab_pin.sym} 1870 -830 0 0 {name=l64 sig_type=std_logic lab=CLKMUX[2]}
+C {devices/lab_pin.sym} 2990 -700 0 0 {name=l65 sig_type=std_logic lab=CLKMUX[0]}
+C {devices/lab_pin.sym} 2990 -670 0 0 {name=l66 sig_type=std_logic lab=CLKMUX[1]}
