@@ -37,4 +37,4 @@ module collapsering_macro #(
     .CLKMUX(clkmux)
   );
 
-endmodule  // collapsering_macro
+endmodule // module collapsering_macro
