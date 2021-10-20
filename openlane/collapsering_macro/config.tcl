@@ -24,6 +24,15 @@ set ::env(VERILOG_FILES) "\
 # Preserve manually instantiated stdcells.
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
+# Disable optimizations and CTS to preserve our hand picked stdcells.
+set ::env(SYNTH_BUFFERING) 0
+set ::env(SYNTH_SHARE_RESOURCES) 0
+set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) 0
+set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) 0
+set ::env(PL_OPENPHYSYN_OPTIMIZATIONS) 0
+set ::env(CLOCK_TREE_SYNTH) 0
+set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
+
 set ::env(DESIGN_IS_CORE) 0
 
 # The clk_ff0 net has the most flops so use this one for timing constraints.
