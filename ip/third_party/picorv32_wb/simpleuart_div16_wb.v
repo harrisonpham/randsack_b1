@@ -18,7 +18,7 @@
  *
  */
 
-module simpleuart_wb # (
+module simpleuart_div16_wb # (
     parameter BASE_ADR = 32'h 2000_0000,
     parameter CLK_DIV = 8'h00,
     parameter DATA = 8'h04,
@@ -66,7 +66,7 @@ module simpleuart_wb # (
     assign wb_ack_o = (simpleuart_reg_div_sel || simpleuart_reg_dat_sel
 			|| simpleuart_reg_cfg_sel) && (!reg_dat_wait);
     
-    simpleuart simpleuart (
+    simpleuart_div16 simpleuart_div16 (
         .clk    (wb_clk_i),
         .resetn (resetn),
 
@@ -91,7 +91,7 @@ module simpleuart_wb # (
 
 endmodule
 
-module simpleuart (
+module simpleuart_div16 (
     input clk,
     input resetn,
 
@@ -113,18 +113,18 @@ module simpleuart (
     output [31:0] reg_dat_do,
     output        reg_dat_wait
 );
-    reg [31:0] cfg_divider;
+    reg [15:0] cfg_divider;
     reg        enabled;
 
     reg [3:0] recv_state;
-    reg [31:0] recv_divcnt;
+    reg [15:0] recv_divcnt;
     reg [7:0] recv_pattern;
     reg [7:0] recv_buf_data;
     reg recv_buf_valid;
 
     reg [9:0] send_pattern;
     reg [3:0] send_bitcnt;
-    reg [31:0] send_divcnt;
+    reg [15:0] send_divcnt;
     reg send_dummy;
 
     wire reg_ena_do;
@@ -142,8 +142,8 @@ module simpleuart (
         end else begin
             if (reg_div_we[0]) cfg_divider[ 7: 0] <= reg_div_di[ 7: 0];
             if (reg_div_we[1]) cfg_divider[15: 8] <= reg_div_di[15: 8];
-            if (reg_div_we[2]) cfg_divider[23:16] <= reg_div_di[23:16];
-            if (reg_div_we[3]) cfg_divider[31:24] <= reg_div_di[31:24];
+            // if (reg_div_we[2]) cfg_divider[23:16] <= reg_div_di[23:16];
+            // if (reg_div_we[3]) cfg_divider[31:24] <= reg_div_di[31:24];
             if (reg_cfg_we) enabled <= reg_div_di[0];
         end
     end

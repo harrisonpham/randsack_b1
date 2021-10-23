@@ -22,15 +22,15 @@ module ring_control #(
   input wb_clk_i,
   input wb_rst_i,
 
-  input wbs_stb_i,
-  input wbs_cyc_i,
-  input wbs_we_i,
-  input [3:0] wbs_sel_i,
-  input [31:0] wbs_dat_i,
-  input [31:0] wbs_adr_i,
+  input wb_stb_i,
+  input wb_cyc_i,
+  input wb_we_i,
+  input [3:0] wb_sel_i,
+  input [31:0] wb_dat_i,
+  input [31:0] wb_adr_i,
 
-  output reg wbs_ack_o,
-  output reg [31:0] wbs_dat_o,
+  output reg wb_ack_o,
+  output reg [31:0] wb_dat_o,
 
   input ring_clk,
   output reg ring_start,
@@ -50,10 +50,10 @@ module ring_control #(
   wire slave_sel = (wb_stb_i && wb_cyc_i);
   wire slave_write_en = (|wb_sel_i && wb_we_i);
 
-  wire control_sel = |(wb_adr_i[7:0] & CONTROL_ADDR);
-  wire count_value_sel = |(wb_adr_i[7:0] & COUNT_VALUE_ADDR);
-  wire trima_sel = |(wb_adr_i[7:0] & TRIMA_ADDR);
-  wire trimb_sel = |(wb_adr_i[7:0] & TRIMB_ADDR);
+  wire control_sel = (wb_adr_i[7:0] == CONTROL_ADDR);
+  wire count_value_sel = (wb_adr_i[7:0] == COUNT_VALUE_ADDR);
+  wire trima_sel = (wb_adr_i[7:0] == TRIMA_ADDR);
+  wire trimb_sel = (wb_adr_i[7:0] == TRIMB_ADDR);
 
   // Counter signals and regs.
   reg counter_resetb;
@@ -78,8 +78,8 @@ module ring_control #(
       counter_resetb <= 1'b0;
       ring_start <= 1'b0;
       ring_clkmux <= {CLKMUX_BITS{1'b1}};
-      ring_trim_a <= {TRIM_BITS{1b'1}};
-      ring_trim_b <= {TRIM_BITS{1b'1}};
+      ring_trim_a <= {TRIM_BITS{1'b1}};
+      ring_trim_b <= {TRIM_BITS{1'b1}};
     end else begin
       wb_ack_o <= 1'b0;
 
@@ -87,7 +87,7 @@ module ring_control #(
         wb_ack_o <= 1'b1;
 
         if (control_sel) begin
-          counter_resetb <= wb_dat_i[0];
+          counter_resetb <= ~wb_dat_i[0];
           ring_start <= wb_dat_i[1];
           ring_clkmux <= wb_dat_i[CLKMUX_BITS-1+8:8];
         end else if (trima_sel) begin

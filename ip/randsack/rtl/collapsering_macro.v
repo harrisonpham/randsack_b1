@@ -29,6 +29,7 @@ module collapsering_macro #(
   output clk_out
 );
 
+`ifndef SIM
   collapsering ring (
     .CLKBUFOUT(clk_out),
     .START(start),
@@ -36,5 +37,27 @@ module collapsering_macro #(
     .TRIMB(trim_b),
     .CLKMUX(clkmux)
   );
+`else
+  // TODO(hdpham): Improve this model.
+  reg [31:0] clk_cnt;
+  reg fake_clk;
+
+  initial begin
+    clk_cnt <= 0;
+    fake_clk <= 1'b0;
+  end
+
+  always @(posedge fake_clk) begin
+    if (start == 1'b1) begin
+      clk_cnt <= clk_cnt + 32'b1;
+    end else begin
+      clk_cnt <= 32'b0;
+    end
+  end
+
+  always #5 fake_clk <= ~fake_clk;
+
+  assign clk_out = fake_clk & start & (clk_cnt < 100);
+`endif
 
 endmodule // module collapsering_macro

@@ -15,7 +15,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-module dtop (
+module digitalcore_macro (
 `ifdef USE_POWER_PINS
   inout vccd1,
   inout vssd1,
@@ -44,7 +44,14 @@ module dtop (
   output [`MPRJ_IO_PADS-1:0] io_oeb,
 
   // IRQ
-  output [2:0] irq
+  output [2:0] irq,
+
+  // ring0 collapsering macro
+  input ring0_clk,
+  output ring0_start,
+  output [27:0] ring0_trim_a,
+  output [27:0] ring0_trim_b,
+  output [2:0] ring0_clkmux
 );
 
   // Filter wishbone accesses from Caravel.
@@ -117,7 +124,7 @@ module dtop (
     .wbs2_rty_i(1'b0),
     .wbs2_cyc_o(ring0_cyc_i),
     .wbs2_addr(RING0_BASE_ADDR),
-    .wbs2_addr_msk(RING0_ADDR_MASK),
+    .wbs2_addr_msk(RING0_ADDR_MASK)
   );
 
   // GPIO signals.
@@ -167,7 +174,7 @@ module dtop (
   wire uart_tx;
   wire uart_rx;
 
-  simpleuart_wb  #(
+  simpleuart_div16_wb  #(
     .BASE_ADR(UART0_BASE_ADDR)
   ) uart0 (
     .wb_clk_i(wb_clk_i),
@@ -198,12 +205,6 @@ module dtop (
   wire ring0_ack_o;
   wire [31:0] ring0_dat_o;
 
-  wire ring0_clk;
-  wire ring0_start;
-  wire [27:0] ring0_trim_a;
-  wire [27:0] ring0_trim_b;
-  wire [2:0] ring0_clkmux;
-
   ring_control #(
     .CLKMUX_BITS(3),
     .TRIM_BITS(28)
@@ -211,15 +212,15 @@ module dtop (
     .wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
 
-    .wbs_stb_i(ring0_stb_i),
-    .wbs_cyc_i(ring0_cyc_i),
-    .wbs_we_i(ring0_we_i),
-    .wbs_sel_i(ring0_sel_i),
-    .wbs_dat_i(ring0_dat_i),
-    .wbs_adr_i(ring0_adr_i),
+    .wb_stb_i(ring0_stb_i),
+    .wb_cyc_i(ring0_cyc_i),
+    .wb_we_i(ring0_we_i),
+    .wb_sel_i(ring0_sel_i),
+    .wb_dat_i(ring0_dat_i),
+    .wb_adr_i(ring0_adr_i),
 
-    .wbs_ack_o(ring0_ack_o),
-    .wbs_dat_o(ring0_dat_o),
+    .wb_ack_o(ring0_ack_o),
+    .wb_dat_o(ring0_dat_o),
 
     .ring_clk(ring0_clk),
     .ring_start(ring0_start),
@@ -228,23 +229,17 @@ module dtop (
     .ring_clkmux(ring0_clkmux)
   );
 
-  collapsering_macro collapsering0 (
-    .CLKBUFOUT(ring0_clk),
-    .START(ring0_start),
-    .TRIMA(ring0_trim_a),
-    .TRIMB(ring0_trim_b),
-    .CLKMUX(ring0_clkmux)
-  );
-
   // Connect up external ports.
   assign gpio_in = io_in[37:6];
-  assign io_out[5:0] = 6'b0;
+  assign uart_rx = io_in[2];
+
+  assign io_out[5:0] = {1'b0, uart_tx, 4'b0};
   assign io_out[37:6] = gpio_out;
-  assign io_oeb[5:0] = {6{1'b1}};
+  assign io_oeb[5:0] = {1'b1, ~uart_enabled, 4'b1};
   assign io_oeb[37:6] = gpio_oeb;
 
   assign la_data_out = 128'b0;
 
   assign irq = 3'b0;
 
-endmodule // module dtop
+endmodule // module digitalcore_macro
