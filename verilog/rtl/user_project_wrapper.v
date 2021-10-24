@@ -88,7 +88,7 @@ module user_project_wrapper #(
   wire [27:0] ring0_trim_b;
   wire [2:0] ring0_clkmux;
 
-digitalcore_macro mprj (
+digitalcore_macro digitalcore (
 `ifdef USE_POWER_PINS
   .vccd1(vccd1),  // User area 1 1.8V power
   .vssd1(vssd1),  // User area 1 digital ground
@@ -129,6 +129,11 @@ digitalcore_macro mprj (
 );
 
 collapsering_macro collapsering0 (
+`ifdef USE_POWER_PINS
+  .vccd1(vccd1),  // User area 1 1.8V power
+  .vssd1(vssd1),  // User area 1 digital ground
+`endif
+
   .clk_out(ring0_clk),
   .start(ring0_start),
   .trim_a(ring0_trim_a),
