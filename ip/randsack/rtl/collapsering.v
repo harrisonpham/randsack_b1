@@ -106,7 +106,7 @@ x47 (
 );
 
 
-sky130_fd_sc_hd__clkbuf_4
+sky130_fd_sc_hd__clkbuf_8
 #(
 )
 x35 (

@@ -22,7 +22,7 @@ set ::env(VERILOG_FILES) "\
 	$script_dir/../../ip/randsack/rtl/digitalcore_macro.v \
 	$script_dir/../../ip/third_party/picorv32_wb/gpio32_wb.v \
 	$script_dir/../../ip/third_party/picorv32_wb/simpleuart_div16_wb.v \
-	$script_dir/../../ip/third_party/verilog-wishbone/rtl/wb_mux_3.v \
+	$script_dir/../../ip/third_party/verilog-wishbone/rtl/wb_mux_4.v \
 	$script_dir/../../ip/randsack/rtl/ring_control.v"
 
 set ::env(DESIGN_IS_CORE) 0
@@ -31,8 +31,8 @@ set ::env(SDC_FILE) "$script_dir/base.sdc"
 set ::env(BASE_SDC_FILE) "$script_dir/base.sdc"
 
 # NOTE: Make sure to add all clocks manually to base.sdc!
-set ::env(CLOCK_PORT) "wb_clk_i ring0_clk"
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PORT) "wb_clk_i ring0_clk ring1_clk"
+set ::env(CLOCK_PERIOD) "15"
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 500 500"

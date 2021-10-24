@@ -15,11 +15,11 @@
 
 set script_dir [file dirname [file normalize [info script]]]
 
-set ::env(DESIGN_NAME) collapsering_macro
+set ::env(DESIGN_NAME) ringosc_macro
 
 set ::env(VERILOG_FILES) "\
-	$script_dir/../../ip/randsack/rtl/collapsering_macro.v \
-	$script_dir/../../ip/randsack/rtl/collapsering.v"
+	$script_dir/../../ip/randsack/rtl/ringosc_macro.v \
+	$script_dir/../../ip/third_party/caravel/ring_osc2x13.v"
 
 # Preserve manually instantiated stdcells.
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
@@ -36,16 +36,13 @@ set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
 
 set ::env(DESIGN_IS_CORE) 0
 
-# The clk_ff0 net has the most flops so use this one for timing constraints.
-# Remaining "clock" signals in this design have manually instantiated clock
-# buffers and no timing relationships so it doesn't really matter.
-# TODO(hdpham): Add additional constraints for remaining clock nets.
-set ::env(CLOCK_PORT) "dummy_not_used"
-set ::env(CLOCK_NET) "ring.clk_ff0"
+# TODO(hdpham): Properly disable STA.
+set ::env(CLOCK_PORT) "clk_out"
+# set ::env(CLOCK_NET) "ring.clk_ff0"
 set ::env(CLOCK_PERIOD) "10"
 
 set ::env(FP_SIZING) absolute
-# 85 85 is optimal but wont fit into PDN
+# 70 70 is optimal but won't fit in PDN.
 set ::env(DIE_AREA) "0 0 50 150"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg

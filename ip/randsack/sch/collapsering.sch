@@ -305,7 +305,7 @@ C {sky130_stdcells/nand2_4.sym} 340 -1310 0 0 {name=x47 VGND=VGND VNB=VNB VPB=VP
 C {devices/title-2.sym} 0 -40 0 0 {name=l26 author="Harrison Pham" rev=1.0}
 C {devices/lab_wire.sym} 3100 -1140 0 0 {name=l18 sig_type=std_logic lab=outb}
 C {devices/lab_wire.sym} 3100 -1530 0 0 {name=l9 sig_type=std_logic lab=outa}
-C {sky130_stdcells/clkbuf_4.sym} 3160 -800 0 0 {name=x35 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/clkbuf_8.sym} 3160 -800 0 0 {name=x35 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/opin.sym} 3230 -800 0 0 {name=p1 lab=CLKBUFOUT}
 C {devices/ipin.sym} 110 -1690 0 0 {name=p2 lab=START}
 C {devices/lab_pin.sym} 400 -1660 0 0 {name=l1 sig_type=std_logic lab=TRIMA[0]}

@@ -36,7 +36,10 @@ module ring_control #(
   output reg ring_start,
   output reg [TRIM_BITS-1:0] ring_trim_a,
   output reg [TRIM_BITS-1:0] ring_trim_b,
-  output reg [CLKMUX_BITS-1:0] ring_clkmux
+  output reg [CLKMUX_BITS-1:0] ring_clkmux,
+
+  output reg test_en,
+  output test_out
 );
   // Register addresses.
   localparam COUNT_VALUE_ADDR = 8'h00;
@@ -59,6 +62,9 @@ module ring_control #(
   reg counter_resetb;
   reg [16:0] counter_value;
 
+  // Test port mux.
+  assign test_out = test_en ? ring_clk : 1'b0;
+
   // Ring oscillator counter.
   // NOTE: This reset is pretty nasty, but the idea is we have full control
   // over the reset timing so we don't need to synchronize it.
@@ -77,9 +83,10 @@ module ring_control #(
       wb_dat_o <= 32'h0;
       counter_resetb <= 1'b0;
       ring_start <= 1'b0;
-      ring_clkmux <= {CLKMUX_BITS{1'b1}};
-      ring_trim_a <= {TRIM_BITS{1'b1}};
-      ring_trim_b <= {TRIM_BITS{1'b1}};
+      ring_clkmux <= {CLKMUX_BITS{1'b0}};
+      ring_trim_a <= {TRIM_BITS{1'b0}};
+      ring_trim_b <= {TRIM_BITS{1'b0}};
+      test_en <= 1'b0;
     end else begin
       wb_ack_o <= 1'b0;
 
@@ -89,6 +96,7 @@ module ring_control #(
         if (control_sel) begin
           counter_resetb <= ~wb_dat_i[0];
           ring_start <= wb_dat_i[1];
+          test_en <= wb_dat_i[2];
           ring_clkmux <= wb_dat_i[CLKMUX_BITS-1+8:8];
         end else if (trima_sel) begin
           ring_trim_a <= wb_dat_i[TRIM_BITS-1:0];

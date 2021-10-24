@@ -13,8 +13,8 @@
 // limitations under the License.
 // SPDX-License-Identifier: Apache-2.0
 
-module collapsering_macro #(
-  parameter TRIM_BITS = 28
+module ringosc_macro #(
+  parameter TRIM_BITS = 26
 ) (
 `ifdef USE_POWER_PINS
     inout vccd1,
@@ -23,47 +23,52 @@ module collapsering_macro #(
 
   input start,
   input [TRIM_BITS-1:0] trim_a,
-  input [TRIM_BITS-1:0] trim_b,
   input [2:0] clkmux,
 
   output clk_out
 );
 
-`ifndef SIM
-  collapsering ring (
-    .CLKBUFOUT(clk_out),
-    .START(start),
-    .TRIMA(trim_a),
-    .TRIMB(trim_b),
-    .CLKMUX(clkmux)
+  wire [1:0] clockp;
+  wire clk = clockp[0];
+
+  ring_osc2x13 ring (
+    .reset(~start),
+    .trim(trim_a),
+    .clockp(clockp)
   );
-`else
-  // TODO(hdpham): Improve this model.
-  reg [31:0] clk_cnt;
-  reg fake_clk;
 
-  wire [31:0] max_cnt = trim_a + trim_b + clkmux;
-
-  always @(max_cnt) begin
-    $display("collapsering_macro max count = 'h%h", max_cnt);
-  end
-
-  initial begin
-    clk_cnt <= 0;
-    fake_clk <= 1'b0;
-  end
-
-  always @(posedge fake_clk) begin
-    if (start == 1'b1) begin
-      clk_cnt <= clk_cnt + 32'b1;
+  // Clock dividers.
+  reg s0;
+  always @(posedge clk or negedge start) begin
+    if (!start) begin
+      s0 <= 1'b0;
     end else begin
-      clk_cnt <= 32'b0;
+      s0 <= ~s0;
     end
   end
 
-  always #5 fake_clk <= ~fake_clk;
+  reg s1;
+  always @(posedge s0 or negedge start) begin
+    if (!start) begin
+      s1 <= 1'b0;
+    end else begin
+      s1 <= ~s1;
+    end
+  end
 
-  assign clk_out = fake_clk & start & (clk_cnt < max_cnt);
-`endif
+  reg s2;
+  always @(posedge s1 or negedge start) begin
+    if (!start) begin
+      s2 <= 1'b0;
+    end else begin
+      s2 <= ~s2;
+    end
+  end
 
-endmodule // module collapsering_macro
+  assign clk_out = (clkmux == 3'b000) ? clk :
+                   (clkmux == 3'b001) ? s0  :
+                   (clkmux == 3'b010) ? s1  :
+                   (clkmux == 3'b011) ? s2  :
+                   clk;
+
+endmodule // module ringosc_macro

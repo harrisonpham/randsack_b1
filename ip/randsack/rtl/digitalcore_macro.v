@@ -51,7 +51,13 @@ module digitalcore_macro (
   output ring0_start,
   output [27:0] ring0_trim_a,
   output [27:0] ring0_trim_b,
-  output [2:0] ring0_clkmux
+  output [2:0] ring0_clkmux,
+
+  // ring1 collapsering macro
+  input ring1_clk,
+  output ring1_start,
+  output [25:0] ring1_trim_a,
+  output [2:0] ring1_clkmux
 );
 
   // Filter wishbone accesses from Caravel.
@@ -67,6 +73,8 @@ module digitalcore_macro (
   parameter UART0_BASE_ADDR   = 32'h3082_0000;
   parameter RING0_ADDR_MASK   = 32'hffff_0000;
   parameter RING0_BASE_ADDR   = 32'h3083_0000;
+  parameter RING1_ADDR_MASK   = 32'hffff_0000;
+  parameter RING1_BASE_ADDR   = 32'h3084_0000;
 
   // Filter addresses from Caravel since we want to be absolutely sure it is
   // selecting us before letting it access the arbiter.  This is mostly needed
@@ -75,7 +83,7 @@ module digitalcore_macro (
   wire wbs_addr_sel;
   assign wbs_addr_sel = (wbs_adr_i & DTOP_MASK) == DTOP_ADDR;
 
-  wb_mux_3 interconnect (
+  wb_mux_4 interconnect (
     .wbm_adr_i(wbs_adr_i),
     .wbm_dat_i(wbs_dat_i),
     .wbm_dat_o(wbs_dat_o),
@@ -124,7 +132,20 @@ module digitalcore_macro (
     .wbs2_rty_i(1'b0),
     .wbs2_cyc_o(ring0_cyc_i),
     .wbs2_addr(RING0_BASE_ADDR),
-    .wbs2_addr_msk(RING0_ADDR_MASK)
+    .wbs2_addr_msk(RING0_ADDR_MASK),
+
+    .wbs3_adr_o(ring1_adr_i),
+    .wbs3_dat_i(ring1_dat_o),
+    .wbs3_dat_o(ring1_dat_i),
+    .wbs3_we_o(ring1_we_i),
+    .wbs3_sel_o(ring1_sel_i),
+    .wbs3_stb_o(ring1_stb_i),
+    .wbs3_ack_i(ring1_ack_o),
+    .wbs3_err_i(1'b0),
+    .wbs3_rty_i(1'b0),
+    .wbs3_cyc_o(ring1_cyc_i),
+    .wbs3_addr(RING1_BASE_ADDR),
+    .wbs3_addr_msk(RING1_ADDR_MASK)
   );
 
   // GPIO signals.
@@ -204,6 +225,8 @@ module digitalcore_macro (
   wire ring0_stb_i;
   wire ring0_ack_o;
   wire [31:0] ring0_dat_o;
+  wire ring0_test_en;
+  wire ring0_test_out;
 
   ring_control #(
     .CLKMUX_BITS(3),
@@ -226,17 +249,59 @@ module digitalcore_macro (
     .ring_start(ring0_start),
     .ring_trim_a(ring0_trim_a),
     .ring_trim_b(ring0_trim_b),
-    .ring_clkmux(ring0_clkmux)
+    .ring_clkmux(ring0_clkmux),
+
+    .test_en(ring0_test_en),
+    .test_out(ring0_test_out)
+  );
+
+  // RING1 signals.
+  wire [31:0] ring1_adr_i;
+  wire [31:0] ring1_dat_i;
+  wire [3:0] ring1_sel_i;
+  wire ring1_we_i;
+  wire ring1_cyc_i;
+  wire ring1_stb_i;
+  wire ring1_ack_o;
+  wire [31:0] ring1_dat_o;
+  wire ring1_test_en;
+  wire ring1_test_out;
+
+  ring_control #(
+    .CLKMUX_BITS(3),
+    .TRIM_BITS(26)
+  ) ring1 (
+    .wb_clk_i(wb_clk_i),
+    .wb_rst_i(wb_rst_i),
+
+    .wb_stb_i(ring1_stb_i),
+    .wb_cyc_i(ring1_cyc_i),
+    .wb_we_i(ring1_we_i),
+    .wb_sel_i(ring1_sel_i),
+    .wb_dat_i(ring1_dat_i),
+    .wb_adr_i(ring1_adr_i),
+
+    .wb_ack_o(ring1_ack_o),
+    .wb_dat_o(ring1_dat_o),
+
+    .ring_clk(ring1_clk),
+    .ring_start(ring1_start),
+    .ring_trim_a(ring1_trim_a),
+    .ring_trim_b(),
+    .ring_clkmux(ring1_clkmux),
+
+    .test_en(ring1_test_en),
+    .test_out(ring1_test_out)
   );
 
   // Connect up external ports.
   assign gpio_in = io_in[37:6];
-  assign uart_rx = io_in[2];
+  assign uart_rx = io_in[35];
 
-  assign io_out[5:0] = {1'b0, uart_tx, 4'b0};
-  assign io_out[37:6] = gpio_out;
-  assign io_oeb[5:0] = {1'b1, ~uart_enabled, 4'b1};
-  assign io_oeb[37:6] = gpio_oeb;
+  assign io_out[5:0] = 6'b0;
+  assign io_out[37:6] = gpio_out | {uart_tx & uart_enabled, 4'b0, ring0_test_out, 26'b0};
+  assign io_oeb[5:0] = 6'b0;
+  assign io_oeb[37:6] = gpio_oeb & {~uart_enabled, {4{1'b1}}, ~ring0_test_en, {26{1'b1}}};
 
   assign la_data_out = 128'b0;
 

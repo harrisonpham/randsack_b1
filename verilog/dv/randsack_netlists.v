@@ -25,8 +25,9 @@
     `include "user_project_wrapper.v"
     `include "digitalcore_macro.v"
     `include "collapsering_macro.v"
+    `include "ringosc_macro.v"
     `include "ring_control.v"
     `include "picorv32_wb/gpio32_wb.v"
     `include "picorv32_wb/simpleuart_div16_wb.v"
-    `include "verilog-wishbone/rtl/wb_mux_3.v"
+    `include "verilog-wishbone/rtl/wb_mux_4.v"
 `endif
