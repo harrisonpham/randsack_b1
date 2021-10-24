@@ -7,3 +7,7 @@ export PDK_ROOT=/home/harrison/workspace/sky130/
 # For sim.
 export GCC_PATH=/opt/riscv32imc/bin/
 export PDK_PATH=/home/harrison/workspace/sky130/sky130A/
+
+# Hack for mpw-3
+export OPENLANE_TAG=master
+

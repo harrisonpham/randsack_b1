@@ -88,6 +88,11 @@ module user_project_wrapper #(
   wire [27:0] ring0_trim_b;
   wire [2:0] ring0_clkmux;
 
+  wire ring1_clk;
+  wire ring1_start;
+  wire [25:0] ring1_trim_a;
+  wire [2:0] ring1_clkmux;
+
 digitalcore_macro digitalcore (
 `ifdef USE_POWER_PINS
   .vccd1(vccd1),  // User area 1 1.8V power
@@ -125,10 +130,16 @@ digitalcore_macro digitalcore (
   .ring0_start(ring0_start),
   .ring0_trim_a(ring0_trim_a),
   .ring0_trim_b(ring0_trim_b),
-  .ring0_clkmux(ring0_clkmux)
+  .ring0_clkmux(ring0_clkmux),
+
+  // ring1 ringosc macro
+  .ring1_clk(ring1_clk),
+  .ring1_start(ring1_start),
+  .ring1_trim_a(ring1_trim_a),
+  .ring1_clkmux(ring1_clkmux)
 );
 
-collapsering_macro collapsering0 (
+collapsering_macro ring0 (
 `ifdef USE_POWER_PINS
   .vccd1(vccd1),  // User area 1 1.8V power
   .vssd1(vssd1),  // User area 1 digital ground
@@ -139,6 +150,18 @@ collapsering_macro collapsering0 (
   .trim_a(ring0_trim_a),
   .trim_b(ring0_trim_b),
   .clkmux(ring0_clkmux)
+);
+
+ringosc_macro ring1 (
+`ifdef USE_POWER_PINS
+  .vccd1(vccd1),  // User area 1 1.8V power
+  .vssd1(vssd1),  // User area 1 digital ground
+`endif
+
+  .clk_out(ring1_clk),
+  .start(ring1_start),
+  .trim_a(ring1_trim_a),
+  .clkmux(ring1_clkmux)
 );
 
 endmodule	// user_project_wrapper

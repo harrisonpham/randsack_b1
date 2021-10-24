@@ -40,8 +40,8 @@ set ::env(DESIGN_IS_CORE) 0
 # Remaining "clock" signals in this design have manually instantiated clock
 # buffers and no timing relationships so it doesn't really matter.
 # TODO(hdpham): Add additional constraints for remaining clock nets.
-set ::env(CLOCK_PORT) "dummy_not_used"
-set ::env(CLOCK_NET) "ring.clk_ff0"
+set ::env(CLOCK_PORT) "clk_out"
+# set ::env(CLOCK_NET) "ring.clk_ff0"
 set ::env(CLOCK_PERIOD) "10"
 
 set ::env(FP_SIZING) absolute
@@ -50,7 +50,7 @@ set ::env(DIE_AREA) "0 0 50 150"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
-set ::env(PL_BASIC_PLACEMENT) 1
+# set ::env(PL_BASIC_PLACEMENT) 1
 set ::env(PL_TARGET_DENSITY) 0.75
 
 # Maximum layer used for routing is metal 4.

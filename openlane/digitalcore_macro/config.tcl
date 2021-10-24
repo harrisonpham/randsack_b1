@@ -34,12 +34,16 @@ set ::env(BASE_SDC_FILE) "$script_dir/base.sdc"
 set ::env(CLOCK_PORT) "wb_clk_i ring0_clk ring1_clk"
 set ::env(CLOCK_PERIOD) "15"
 
+# Try to minimize fanout to fix slew violations.
+# set ::env(SYNTH_MAX_FANOUT) 4
+# set ::env(CLOCK_BUFFER_FANOUT) 14
+
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 500 500"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
-set ::env(PL_TIME_DRIVEN) 1
+# set ::env(PL_TIME_DRIVEN) 1
 set ::env(PL_TARGET_DENSITY) 0.4
 
 # Maximum layer used for routing is metal 4.

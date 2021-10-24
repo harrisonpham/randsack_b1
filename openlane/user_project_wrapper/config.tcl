@@ -51,19 +51,16 @@ set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/user_proj_example.v \
 	$script_dir/../../ip/randsack/rtl/digitalcore_macro.v \
 	$script_dir/../../ip/randsack/rtl/collapsering_macro.v \
 	$script_dir/../../ip/randsack/rtl/ringosc_macro.v"
 
 set ::env(EXTRA_LEFS) "\
-	$script_dir/../../lef/user_proj_example.lef \
 	$script_dir/../../lef/digitalcore_macro.lef \
 	$script_dir/../../lef/collapsering_macro.lef \
 	$script_dir/../../lef/ringosc_macro.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
-	$script_dir/../../gds/user_proj_example.gds \
 	$script_dir/../../gds/digitalcore_macro.gds \
 	$script_dir/../../gds/collapsering_macro.gds \
 	$script_dir/../../gds/ringosc_macro.gds"
@@ -72,6 +69,9 @@ set ::env(GLB_RT_MAXLAYER) 5
 
 # Don't use high resistance li1 for long routes.
 set ::env(GLB_RT_OBS)  "li1 0 0 2920 3520"
+
+set ::env(GLB_RT_ALLOW_CONGESTION) 1
+set ::env(GLB_RT_ADJUSTMENT) 0.70
 
 # disable pdn check nodes becuase it hangs with multiple power domains.
 # any issue with pdn connections will be flagged with LVS so it is not a critical check.
