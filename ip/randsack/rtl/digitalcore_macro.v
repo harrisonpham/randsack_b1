@@ -299,9 +299,24 @@ module digitalcore_macro (
   assign uart_rx = io_in[35];
 
   assign io_out[5:0] = 6'b0;
-  assign io_out[37:6] = gpio_out | {uart_tx & uart_enabled, 4'b0, ring0_test_out, 26'b0};
+  assign io_out[37:6] = gpio_out |
+    {
+      /*io37=*/uart_tx & uart_enabled,
+      4'b0,
+      /*io32=*/ring0_test_out,
+      /*io31=*/ring1_test_out,
+      25'b0
+    };
+
   assign io_oeb[5:0] = 6'b0;
-  assign io_oeb[37:6] = gpio_oeb & {~uart_enabled, {4{1'b1}}, ~ring0_test_en, {26{1'b1}}};
+  assign io_oeb[37:6] = gpio_oeb &
+    {
+      /*io37=*/~uart_enabled,
+      {4{1'b1}},
+      /*io32=*/~ring0_test_en,
+      /*io31=*/~ring1_test_en,
+      {25{1'b1}}
+    };
 
   assign la_data_out = 128'b0;
 

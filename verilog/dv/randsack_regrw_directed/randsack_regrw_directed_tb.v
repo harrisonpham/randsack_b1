@@ -32,7 +32,7 @@ module randsack_regrw_directed_tb;
   wire [37:0] mprj_io;
   wire [15:0] checkbits;
 
-  assign checkbits = mprj_io[37:22];
+  assign checkbits = mprj_io[21:6];
 
   // Force housekeeping SPI.
   assign mprj_io[3] = (CSB == 1'b1) ? 1'b1 : 1'bz;
