@@ -45,7 +45,7 @@ SIM?=RTL
 
 PATTERN = randsack_regrw_directed
 
-all:  ${PATTERN:=.vcd}
+all:  ${PATTERN:=.fst}
 
 hex:  ${PATTERN:=.hex}
 
@@ -63,8 +63,8 @@ else
 	$< -o $@ 
 endif
 
-%.vcd: %.vvp
-	vvp $<
+%.fst: %.vvp
+	vvp $< -fst
 
 %.elf: %.c $(CARAVEL_FIRMWARE_PATH)/sections.lds $(CARAVEL_FIRMWARE_PATH)/start.s check-env
 	${GCC_PATH}/${GCC_PREFIX}-gcc -I $(CARAVEL_PATH) -march=rv32imc -mabi=ilp32 -Wl,-Bstatic,-T,$(CARAVEL_FIRMWARE_PATH)/sections.lds,--strip-debug -ffreestanding -nostdlib -o $@ $(CARAVEL_FIRMWARE_PATH)/start.s $<
@@ -95,6 +95,6 @@ endif
 # ---- Clean ----
 
 clean:
-	rm -f *.elf *.hex *.bin *.vvp *.vcd *.log
+	rm -f *.elf *.hex *.bin *.vvp *.fst *.log
 
 .PHONY: clean hex all

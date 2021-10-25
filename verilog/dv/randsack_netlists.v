@@ -21,6 +21,12 @@
     // Assume default net type to be wire because GL netlists don't have the wire definitions
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
+    `include "gl/digitalcore_macro.v"
+    // TODO(hdpham): Add better collapsering sim model.
+    `include "collapsering_macro.v"
+    `include "ringosc_macro.v"
+    `include "collapsering.v"
+    `include "ring_osc2x13.v"
 `else
     `include "user_project_wrapper.v"
     `include "digitalcore_macro.v"

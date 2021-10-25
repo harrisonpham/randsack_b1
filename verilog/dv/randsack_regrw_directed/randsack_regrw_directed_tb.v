@@ -48,7 +48,7 @@ module randsack_regrw_directed_tb;
   end
 
   initial begin
-    $dumpfile("randsack_regrw_directed_tb.vcd");
+    $dumpfile("randsack_regrw_directed_tb.fst");
     $dumpvars(0, randsack_regrw_directed_tb);
 
     // Repeat cycles of 1000 clock edges as needed to complete testbench

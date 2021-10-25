@@ -71,7 +71,8 @@ set ::env(GLB_RT_MAXLAYER) 5
 set ::env(GLB_RT_OBS)  "li1 0 0 2920 3520"
 
 set ::env(GLB_RT_ALLOW_CONGESTION) 1
-set ::env(GLB_RT_ADJUSTMENT) 0.70
+set ::env(GLB_RT_ADJUSTMENT) 0.60
+# set ::env(ROUTING_OPT_ITERS) 128
 
 # disable pdn check nodes becuase it hangs with multiple power domains.
 # any issue with pdn connections will be flagged with LVS so it is not a critical check.
