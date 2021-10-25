@@ -1,0 +1,950 @@
+* NGSPICE file created from ringosc_macro.ext - technology: sky130A
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__einvp_2 abstract view
+.subckt sky130_fd_sc_hd__einvp_2 A TE VGND VNB VPB VPWR Z
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__fill_2 abstract view
+.subckt sky130_fd_sc_hd__fill_2 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_4 abstract view
+.subckt sky130_fd_sc_hd__decap_4 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__diode_2 abstract view
+.subckt sky130_fd_sc_hd__diode_2 DIODE VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkbuf_2 abstract view
+.subckt sky130_fd_sc_hd__clkbuf_2 A VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_12 abstract view
+.subckt sky130_fd_sc_hd__decap_12 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__tapvpwrvgnd_1 abstract view
+.subckt sky130_fd_sc_hd__tapvpwrvgnd_1 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkinv_1 abstract view
+.subckt sky130_fd_sc_hd__clkinv_1 A VGND VNB VPB VPWR Y
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkbuf_1 abstract view
+.subckt sky130_fd_sc_hd__clkbuf_1 A VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_6 abstract view
+.subckt sky130_fd_sc_hd__decap_6 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__einvn_8 abstract view
+.subckt sky130_fd_sc_hd__einvn_8 A TE_B VGND VNB VPB VPWR Z
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_3 abstract view
+.subckt sky130_fd_sc_hd__decap_3 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__fill_1 abstract view
+.subckt sky130_fd_sc_hd__fill_1 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__einvn_4 abstract view
+.subckt sky130_fd_sc_hd__einvn_4 A TE_B VGND VNB VPB VPWR Z
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__dfrtp_2 abstract view
+.subckt sky130_fd_sc_hd__dfrtp_2 CLK D RESET_B VGND VNB VPB VPWR Q
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_8 abstract view
+.subckt sky130_fd_sc_hd__decap_8 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__mux2_1 abstract view
+.subckt sky130_fd_sc_hd__mux2_1 A0 A1 S VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__nor3_2 abstract view
+.subckt sky130_fd_sc_hd__nor3_2 A B C VGND VNB VPB VPWR Y
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__or2_2 abstract view
+.subckt sky130_fd_sc_hd__or2_2 A B VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__einvp_1 abstract view
+.subckt sky130_fd_sc_hd__einvp_1 A TE VGND VNB VPB VPWR Z
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__conb_1 abstract view
+.subckt sky130_fd_sc_hd__conb_1 VGND VNB VPB VPWR HI LO
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__inv_2 abstract view
+.subckt sky130_fd_sc_hd__inv_2 A VGND VNB VPB VPWR Y
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkinv_2 abstract view
+.subckt sky130_fd_sc_hd__clkinv_2 A VGND VNB VPB VPWR Y
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkinv_8 abstract view
+.subckt sky130_fd_sc_hd__clkinv_8 A VGND VNB VPB VPWR Y
+.ends
+
+.subckt ringosc_macro clk_out clkmux[0] clkmux[1] clkmux[2] start trim_a[0] trim_a[10]
++ trim_a[11] trim_a[12] trim_a[13] trim_a[14] trim_a[15] trim_a[16] trim_a[17] trim_a[18]
++ trim_a[19] trim_a[1] trim_a[20] trim_a[21] trim_a[22] trim_a[23] trim_a[24] trim_a[25]
++ trim_a[2] trim_a[3] trim_a[4] trim_a[5] trim_a[6] trim_a[7] trim_a[8] trim_a[9]
++ vccd1 vssd1
+Xring.iss.delayen0 ring.iss.delayen0/A trim_a[12] vssd1 vssd1 vccd1 vccd1 ring.ibufp00/A
++ sky130_fd_sc_hd__einvp_2
+Xring.dstage\[9\].id.delayen0 ring.dstage\[9\].id.delayen0/A trim_a[9] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[9\].id.delayen0/Z sky130_fd_sc_hd__einvp_2
+XFILLER_26_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+XFILLER_12_43 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_0_24 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_9_44 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA__26__RESET_B start vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_18_53 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[11\].id.delaybuf0 ring.dstage\[10\].id.delayen0/Z vssd1 vssd1 vccd1
++ vccd1 ring.dstage\[11\].id.delayenb1/A sky130_fd_sc_hd__clkbuf_2
+XFILLER_45_51 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_29_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_13_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_15_76 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XTAP_134 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_123 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+Xring.iss.delayen1 ring.iss.delayen1/A trim_a[25] vssd1 vssd1 vccd1 vccd1 ring.iss.delayen1/Z
++ sky130_fd_sc_hd__einvp_2
+XTAP_101 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA_ring.dstage\[3\].id.delayen0_TE trim_a[3] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XTAP_112 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+Xring.dstage\[9\].id.delayen1 ring.dstage\[9\].id.delayen1/A trim_a[22] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[9\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+XFILLER_42_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XANTENNA_ring.dstage\[11\].id.delayen0_TE trim_a[11] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_3_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+Xring.dstage\[0\].id.delayint0 ring.dstage\[0\].id.delayen1/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[0\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+XFILLER_37_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[5\].id.delayenb1_TE_B trim_a[18] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XANTENNA_ring.dstage\[8\].id.delayen0_TE trim_a[8] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_43_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[11\].id.delaybuf1 ring.dstage\[11\].id.delayenb1/A vssd1 vssd1 vccd1
++ vccd1 ring.dstage\[11\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+XFILLER_29_75 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XFILLER_20_66 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_20_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[8\].id.delayenb0 ring.dstage\[8\].id.delayenb1/A trim_a[8] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[8\].id.delayen0/Z sky130_fd_sc_hd__einvn_8
+XFILLER_6_24 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.iss.delayenb0 ring.iss.delayenb1/A ring.iss.ctrlen0/X vssd1 vssd1 vccd1 vccd1
++ ring.ibufp00/A sky130_fd_sc_hd__einvn_8
+XTAP_135 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_124 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_102 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_113 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_3_14 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_12_56 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_12_67 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[9\].id.delayenb0_TE_B trim_a[9] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_23_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_23_44 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_3_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_0_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XFILLER_36_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_20_56 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xring.dstage\[8\].id.delayenb1 ring.dstage\[8\].id.delayenb1/A trim_a[21] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[8\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+XFILLER_6_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_6_58 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[10\].id.delayint0 ring.dstage\[10\].id.delayen1/Z vssd1 vssd1 vccd1
++ vccd1 ring.dstage\[10\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+XFILLER_31_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_31_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xring.iss.delayenb1 ring.iss.delayenb1/A trim_a[25] vssd1 vssd1 vccd1 vccd1 ring.iss.delayen1/Z
++ sky130_fd_sc_hd__einvn_4
+XTAP_136 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_125 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_103 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_114 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_26_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_3_26 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA__12__A clkmux[0] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_29_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_34_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_6_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XANTENNA__20__A clkmux[0] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XTAP_137 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+Xring.dstage\[8\].id.delaybuf0 ring.dstage\[7\].id.delayen0/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[8\].id.delayenb1/A sky130_fd_sc_hd__clkbuf_2
+XTAP_126 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+Xring.dstage\[6\].id.delayen0 ring.dstage\[6\].id.delayen0/A trim_a[6] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[6\].id.delayen0/Z sky130_fd_sc_hd__einvp_2
+XTAP_104 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_11_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[4\].id.delayenb0 ring.dstage\[4\].id.delayenb1/A trim_a[4] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[4\].id.delayen0/Z sky130_fd_sc_hd__einvn_8
+XTAP_115 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_26_45 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_42_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_42_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.iss.delaybuf0 ring.iss.delayenb1/A vssd1 vssd1 vccd1 vccd1 ring.iss.delayen1/A
++ sky130_fd_sc_hd__clkbuf_1
+Xring.dstage\[10\].id.delayen0 ring.dstage\[10\].id.delayen0/A trim_a[10] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[10\].id.delayen0/Z sky130_fd_sc_hd__einvp_2
+XFILLER_37_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.iss.delayen1_TE trim_a[25] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_23_35 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_9_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_41_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+X_28_ _25_/A1 _28_/D start vssd1 vssd1 vccd1 vccd1 _28_/Q sky130_fd_sc_hd__dfrtp_2
+XFILLER_45_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_45_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XANTENNA_ring.iss.delayenb1_TE_B trim_a[25] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XANTENNA__18__A clkmux[0] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_31_68 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_31_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_15_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XTAP_138 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+Xring.dstage\[8\].id.delaybuf1 ring.dstage\[8\].id.delayenb1/A vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[8\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+XTAP_127 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+Xring.dstage\[6\].id.delayen1 ring.dstage\[6\].id.delayen1/A trim_a[19] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[6\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+XTAP_105 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+Xring.dstage\[4\].id.delayenb1 ring.dstage\[4\].id.delayenb1/A trim_a[17] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[4\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+XTAP_116 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_7_70 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_3_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[0\].id.delayenb1_TE_B trim_a[13] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+Xring.dstage\[10\].id.delayen1 ring.dstage\[10\].id.delayen1/A trim_a[23] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[10\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+XFILLER_37_45 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_12_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_0_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+XFILLER_9_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_9_38 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_13_80 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_1_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_34_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+X_27_ _28_/Q _27_/D start vssd1 vssd1 vccd1 vccd1 _27_/Q sky130_fd_sc_hd__dfrtp_2
+XANTENNA__18__B clkmux[1] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XANTENNA_ring.dstage\[0\].id.delayen1_TE trim_a[13] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_20_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_20_59 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_15_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XANTENNA__20__C clkmux[2] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XTAP_139 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_128 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_0 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XTAP_106 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA_ring.dstage\[4\].id.delayenb0_TE_B trim_a[4] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XTAP_117 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+Xring.dstage\[4\].id.delaybuf0 ring.dstage\[3\].id.delayen0/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[4\].id.delayenb1/A sky130_fd_sc_hd__clkbuf_2
+XFILLER_37_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[5\].id.delayen1_TE trim_a[18] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+Xring.dstage\[0\].id.delayenb0 ring.dstage\[0\].id.delayenb1/A trim_a[0] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[0\].id.delayen0/Z sky130_fd_sc_hd__einvn_8
+XFILLER_12_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_12_49 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[7\].id.delayint0 ring.dstage\[7\].id.delayen1/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[7\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+XFILLER_23_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_18_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_27_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_24_80 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_29_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+X_26_ _27_/Q _26_/D start vssd1 vssd1 vccd1 vccd1 _26_/Q sky130_fd_sc_hd__dfrtp_2
+XANTENNA__18__C clkmux[2] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_1_51 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_20_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_20_49 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_6_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+XFILLER_10_60 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XFILLER_19_80 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_15_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_31_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XTAP_129 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_118 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_1 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XTAP_107 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_26_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[0\].id.delayenb1 ring.dstage\[0\].id.delayenb1/A trim_a[13] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[0\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+Xring.dstage\[4\].id.delaybuf1 ring.dstage\[4\].id.delayenb1/A vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[4\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+XFILLER_37_69 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_23_38 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_23_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_3_8 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_34_37 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_34_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_18_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_18_49 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+XFILLER_29_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_1_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_1_30 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+X_25_ _24_/X _25_/A1 _25_/S vssd1 vssd1 vccd1 vccd1 clk_out sky130_fd_sc_hd__mux2_1
+XANTENNA_ring.dstage\[6\].id.delayenb1_TE_B trim_a[19] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_31_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[3\].id.delayen0 ring.dstage\[3\].id.delayen0/A trim_a[3] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[3\].id.delayen0/Z sky130_fd_sc_hd__einvp_2
+XFILLER_15_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+Xring.dstage\[10\].id.delayenb0 ring.dstage\[10\].id.delayenb1/A trim_a[10] vssd1
++ vssd1 vccd1 vccd1 ring.dstage\[10\].id.delayen0/Z sky130_fd_sc_hd__einvn_8
+XTAP_119 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XANTENNA_ring.dstage\[1\].id.delayen0_TE trim_a[1] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XPHY_2 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XTAP_108 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_42_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_26_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_32_70 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_12_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_37_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_4_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[0\].id.delaybuf0 ring.ibufp00/A vssd1 vssd1 vccd1 vccd1 ring.dstage\[0\].id.delayenb1/A
++ sky130_fd_sc_hd__clkbuf_2
+XFILLER_38_80 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XANTENNA_ring.dstage\[6\].id.delayen0_TE trim_a[6] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+Xring.dstage\[3\].id.delayint0 ring.dstage\[3\].id.delayen1/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[3\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+XFILLER_34_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+X_24_ _23_/X _28_/Q _24_/S vssd1 vssd1 vccd1 vccd1 _24_/X sky130_fd_sc_hd__mux2_1
+XFILLER_20_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_45_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_29_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_32_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_31_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[3\].id.delayen1 ring.dstage\[3\].id.delayen1/A trim_a[16] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[3\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+Xring.dstage\[10\].id.delayenb1 ring.dstage\[10\].id.delayenb1/A trim_a[23] vssd1
++ vssd1 vccd1 vccd1 ring.dstage\[10\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+XTAP_109 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_7_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_42_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_37_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[0\].id.delaybuf1 ring.dstage\[0\].id.delayenb1/A vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[0\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+XFILLER_18_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+X_23_ _22_/X _27_/Q _23_/S vssd1 vssd1 vccd1 vccd1 _23_/X sky130_fd_sc_hd__mux2_1
+XFILLER_45_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_29_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_25_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XPHY_4 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_7_31 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_26_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[10\].id.delaybuf0 ring.dstage\[9\].id.delayen0/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[10\].id.delayenb1/A sky130_fd_sc_hd__clkbuf_2
+XFILLER_37_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_13_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_34_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+X_22_ _25_/A1 _26_/Q _22_/S vssd1 vssd1 vccd1 vccd1 _22_/X sky130_fd_sc_hd__mux2_1
+XFILLER_1_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_1_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_45_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_35_61 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_19_51 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_19_62 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_18_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_21_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_46_71 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_46_60 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_5 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_42_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_16_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[10\].id.delaybuf1 ring.dstage\[10\].id.delayenb1/A vssd1 vssd1 vccd1
++ vccd1 ring.dstage\[10\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+Xring.dstage\[7\].id.delayenb0 ring.dstage\[7\].id.delayenb1/A trim_a[7] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[7\].id.delayen0/Z sky130_fd_sc_hd__einvn_8
+XFILLER_43_61 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_4_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_4_66 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_38_72 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_38_50 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[1\].id.delayenb1_TE_B trim_a[14] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_40_62 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_24_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+X_21_ _21_/A _21_/B clkmux[2] vssd1 vssd1 vccd1 vccd1 _22_/S sky130_fd_sc_hd__nor3_2
+Xring.dstage\[0\].id.delayen0 ring.dstage\[0\].id.delayen0/A trim_a[0] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[0\].id.delayen0/Z sky130_fd_sc_hd__einvp_2
+XFILLER_10_21 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_10_43 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_6 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_7_44 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_7_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_30_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_32_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XFILLER_27_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_43_73 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+Xring.dstage\[7\].id.delayenb1 ring.dstage\[7\].id.delayenb1/A trim_a[20] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[7\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+XANTENNA_ring.dstage\[5\].id.delayenb0_TE_B trim_a[5] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_8_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_13_76 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_40_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+X_20_ clkmux[0] _21_/B clkmux[2] vssd1 vssd1 vccd1 vccd1 _23_/S sky130_fd_sc_hd__nor3_2
+XFILLER_1_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+XFILLER_1_24 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_10_33 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_10_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_35_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[0\].id.delayen1 ring.dstage\[0\].id.delayen1/A trim_a[13] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[0\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+XPHY_7 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_23_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XANTENNA_ring.dstage\[3\].id.delayen1_TE trim_a[16] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_43_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[11\].id.delayen1_TE trim_a[24] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_4_24 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[8\].id.delayen0 ring.dstage\[8\].id.delayen0/A trim_a[8] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[8\].id.delayen0/Z sky130_fd_sc_hd__einvp_2
+XFILLER_38_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xring.dstage\[7\].id.delaybuf0 ring.dstage\[6\].id.delayen0/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[7\].id.delayenb1/A sky130_fd_sc_hd__clkbuf_2
+Xring.dstage\[3\].id.delayenb0 ring.dstage\[3\].id.delayenb1/A trim_a[3] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[3\].id.delayen0/Z sky130_fd_sc_hd__einvn_8
+XFILLER_24_76 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_24_65 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_24_54 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[8\].id.delayen1_TE trim_a[21] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_19_76 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_46_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_21_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_8 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_16_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.iss.ctrlen0 _14_/Y trim_a[12] vssd1 vssd1 vccd1 vccd1 ring.iss.ctrlen0/X sky130_fd_sc_hd__or2_2
+XFILLER_16_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_16_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[7\].id.delayenb1_TE_B trim_a[20] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+Xring.dstage\[8\].id.delayen1 ring.dstage\[8\].id.delayen1/A trim_a[21] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[8\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+Xring.dstage\[7\].id.delaybuf1 ring.dstage\[7\].id.delayenb1/A vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[7\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+Xring.dstage\[3\].id.delayenb1 ring.dstage\[3\].id.delayenb1/A trim_a[16] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[3\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+XFILLER_1_37 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_1_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_46_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_10_24 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_19_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xring.iss.reseten0 ring.iss.const1/HI _14_/Y vssd1 vssd1 vccd1 vccd1 ring.ibufp00/A
++ sky130_fd_sc_hd__einvp_1
+XFILLER_46_53 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_9 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XANTENNA__28__RESET_B start vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_32_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_32_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_16_45 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_27_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_4_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_13_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XANTENNA_ring.dstage\[4\].id.delayen0_TE trim_a[4] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_40_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_40_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA__13__A clkmux[1] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_6_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_39_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[3\].id.delaybuf0 ring.dstage\[2\].id.delayen0/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[3\].id.delayenb1/A sky130_fd_sc_hd__clkbuf_2
+XFILLER_35_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[6\].id.delayint0 ring.dstage\[6\].id.delayen1/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[6\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+XFILLER_10_36 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_21_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+XANTENNA_ring.dstage\[9\].id.delayen0_TE trim_a[9] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_7_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_7_37 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_7_59 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[0\].id.delayenb0_TE_B trim_a[0] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_21_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_13_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_13_69 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_35_45 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XTAP_94 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_10_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xring.dstage\[3\].id.delaybuf1 ring.dstage\[3\].id.delayenb1/A vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[3\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+XFILLER_19_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+XFILLER_46_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_7_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+XFILLER_21_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_14_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_27_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+Xring.dstage\[5\].id.delayen0 ring.dstage\[5\].id.delayen0/A trim_a[5] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[5\].id.delayen0/Z sky130_fd_sc_hd__einvp_2
+XFILLER_13_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_24_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_1_18 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XTAP_95 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_19_69 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_35_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_90 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_44_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_2_72 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XANTENNA_ring.dstage\[2\].id.delayenb1_TE_B trim_a[15] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XANTENNA__19__B clkmux[1] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_21_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[2\].id.delayint0 ring.dstage\[2\].id.delayen1/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[2\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+XANTENNA__21__C clkmux[2] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_16_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_16_48 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_22_80 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XANTENNA_ring.dstage\[10\].id.delayenb1_TE_B trim_a[23] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_43_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_27_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+Xring.dstage\[5\].id.delayen1 ring.dstage\[5\].id.delayen1/A trim_a[18] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[5\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+XFILLER_4_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_4_18 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_17_80 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_38_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_13_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_24_37 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+XFILLER_24_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XTAP_96 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_35_69 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_4_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_19_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XPHY_91 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_80 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_37_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XANTENNA_ring.dstage\[6\].id.delayenb0_TE_B trim_a[6] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_46_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XANTENNA__19__C clkmux[2] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_21_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_32_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_16_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_43_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_27_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_38_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_13_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_24_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_5_62 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_40_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XTAP_97 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_35_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_10_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_19_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XPHY_92 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_81 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_70 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_25_70 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_21_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_32_49 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_32_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XANTENNA_ring.dstage\[1\].id.delayen1_TE trim_a[14] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_43_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_27_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_12_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_38_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_40_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XANTENNA_ring.dstage\[8\].id.delayenb1_TE_B trim_a[21] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XANTENNA_ring.dstage\[6\].id.delayen1_TE trim_a[19] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XTAP_98 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_35_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_19_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.iss.const1 vssd1 vssd1 vccd1 vccd1 ring.iss.const1/HI ring.iss.const1/LO sky130_fd_sc_hd__conb_1
+XPHY_93 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_82 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_71 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_60 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+Xring.dstage\[6\].id.delayenb0 ring.dstage\[6\].id.delayenb1/A trim_a[6] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[6\].id.delayen0/Z sky130_fd_sc_hd__einvn_8
+XFILLER_2_31 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_46_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_42_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_16_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[2\].id.delayen0 ring.dstage\[2\].id.delayen0/A trim_a[2] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[2\].id.delayen0/Z sky130_fd_sc_hd__einvp_2
+XFILLER_22_50 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_22_72 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_43_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_27_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_38_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_24_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_35_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XTAP_99 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_83 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_72 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_61 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+Xring.dstage\[6\].id.delayenb1 ring.dstage\[6\].id.delayenb1/A trim_a[19] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[6\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+XPHY_50 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_2_43 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_46_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_11_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_2_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_11_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_35_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_32_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[2\].id.delayen1 ring.dstage\[2\].id.delayen1/A trim_a[15] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[2\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+XFILLER_8_64 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_8_75 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XFILLER_43_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XANTENNA_ring.dstage\[2\].id.delayen0_TE trim_a[2] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_40_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XANTENNA_ring.dstage\[10\].id.delayen0_TE trim_a[10] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XANTENNA_ring.dstage\[1\].id.delayenb0_TE_B trim_a[1] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_30_62 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_14_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XPHY_84 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_73 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_62 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_51 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_2_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_40 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XANTENNA_ring.dstage\[7\].id.delayen0_TE trim_a[7] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_11_31 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_28_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[6\].id.delaybuf0 ring.dstage\[5\].id.delayen0/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[6\].id.delayenb1/A sky130_fd_sc_hd__clkbuf_2
+Xring.dstage\[2\].id.delayenb0 ring.dstage\[2\].id.delayenb1/A trim_a[2] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[2\].id.delayen0/Z sky130_fd_sc_hd__einvn_8
+Xring.dstage\[9\].id.delayint0 ring.dstage\[9\].id.delayen1/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[9\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+XFILLER_22_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+X_19_ _21_/A clkmux[1] clkmux[2] vssd1 vssd1 vccd1 vccd1 _24_/S sky130_fd_sc_hd__nor3_2
+XFILLER_17_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_38_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_28_73 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_5_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_5_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_10_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_30_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_14_53 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_39_61 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XPHY_85 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_41_51 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_74 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_63 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_25_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_30 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_46_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[6\].id.delaybuf1 ring.dstage\[6\].id.delayenb1/A vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[6\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+Xring.dstage\[2\].id.delayenb1 ring.dstage\[2\].id.delayenb1/A trim_a[15] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[2\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+XFILLER_40_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+X_18_ clkmux[0] clkmux[1] clkmux[2] vssd1 vssd1 vccd1 vccd1 _25_/S sky130_fd_sc_hd__nor3_2
+XFILLER_33_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[3\].id.delayenb1_TE_B trim_a[16] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_28_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_5_23 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[11\].id.delayenb1_TE_B trim_a[24] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_30_75 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XFILLER_30_53 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XPHY_86 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_75 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_64 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_53 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_20 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_31 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_42 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_2_68 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_2_24 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_11_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_36_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_0_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_33_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[2\].id.delaybuf0 ring.dstage\[1\].id.delayen0/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[2\].id.delayenb1/A sky130_fd_sc_hd__clkbuf_2
+X_17_ _26_/Q vssd1 vssd1 vccd1 vccd1 _26_/D sky130_fd_sc_hd__inv_2
+XANTENNA_ring.dstage\[7\].id.delayenb0_TE_B trim_a[7] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_17_65 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_17_76 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[5\].id.delayint0 ring.dstage\[5\].id.delayen1/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[5\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+XFILLER_44_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_5_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_39_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_14_66 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_14_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_87 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_76 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_65 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_54 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_10 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XANTENNA__27__RESET_B start vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XPHY_21 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_32 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_43 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_11_34 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_36_75 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XFILLER_36_53 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_26_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+X_16_ _27_/Q vssd1 vssd1 vccd1 vccd1 _27_/D sky130_fd_sc_hd__inv_2
+Xring.dstage\[2\].id.delaybuf1 ring.dstage\[2\].id.delayenb1/A vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[2\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+XFILLER_8_35 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_0_80 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_5_36 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[7\].id.delayen0 ring.dstage\[7\].id.delayen0/A trim_a[7] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[7\].id.delayen0/Z sky130_fd_sc_hd__einvp_2
+XPHY_88 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_66 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_25_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_11 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_22 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_33 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_44 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+Xring.dstage\[11\].id.delayen0 ring.dstage\[11\].id.delayen0/A trim_a[11] vssd1 vssd1
++ vccd1 vccd1 ring.iss.delayenb1/A sky130_fd_sc_hd__einvp_2
+XFILLER_2_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_11_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+XANTENNA_ring.dstage\[9\].id.delayenb1_TE_B trim_a[22] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+X_15_ _28_/Q vssd1 vssd1 vccd1 vccd1 _28_/D sky130_fd_sc_hd__inv_2
+XFILLER_19_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_33_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_28_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[1\].id.delayint0 ring.dstage\[1\].id.delayen1/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[1\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+Xring.dstage\[7\].id.delayen1 ring.dstage\[7\].id.delayen1/A trim_a[20] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[7\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+XANTENNA_ring.dstage\[4\].id.delayen1_TE trim_a[17] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XPHY_12 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_89 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_41_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_41_66 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_41_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XPHY_78 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_67 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+Xring.dstage\[11\].id.delayen1 ring.dstage\[11\].id.delayen1/A trim_a[24] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[11\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+XPHY_56 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_25_45 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_45 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XANTENNA__14__A start vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XPHY_23 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_34 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XANTENNA_ring.iss.delayen0_TE trim_a[12] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XANTENNA_ring.dstage\[9\].id.delayen1_TE trim_a[22] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+Xring.dstage\[9\].id.delayenb0 ring.dstage\[9\].id.delayenb1/A trim_a[9] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[9\].id.delayen0/Z sky130_fd_sc_hd__einvn_8
+XFILLER_8_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+X_14_ start vssd1 vssd1 vccd1 vccd1 _14_/Y sky130_fd_sc_hd__inv_2
+XFILLER_33_45 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_17_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_31_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_0_60 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_44_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_44_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_5_49 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XFILLER_39_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_39_66 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_79 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_68 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_25_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+XPHY_46 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_13 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_9_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XPHY_24 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_35 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_11_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XANTENNA_ring.dstage\[2\].id.delayenb0_TE_B trim_a[2] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+Xring.dstage\[9\].id.delayenb1 ring.dstage\[9\].id.delayenb1/A trim_a[22] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[9\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+XFILLER_8_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+X_13_ clkmux[1] vssd1 vssd1 vccd1 vccd1 _21_/B sky130_fd_sc_hd__inv_2
+XANTENNA_ring.dstage\[10\].id.delayenb0_TE_B trim_a[10] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_33_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
+Xring.dstage\[11\].id.delayint0 ring.dstage\[11\].id.delayen1/Z vssd1 vssd1 vccd1
++ vccd1 ring.dstage\[11\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+XFILLER_17_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_24_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XANTENNA_ring.iss.ctrlen0_B trim_a[12] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_0_72 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XANTENNA_ring.dstage\[0\].id.delayen0_TE trim_a[0] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_5_17 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_14_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_14_59 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_30_69 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XPHY_69 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_58 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_14 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_25 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_36 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_2_18 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_15_80 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_11_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[5\].id.delayen0_TE trim_a[5] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_8_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_22_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+X_12_ clkmux[0] vssd1 vssd1 vccd1 vccd1 _21_/A sky130_fd_sc_hd__inv_2
+XFILLER_17_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[9\].id.delaybuf0 ring.dstage\[8\].id.delayen0/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[9\].id.delayenb1/A sky130_fd_sc_hd__clkbuf_2
+Xring.dstage\[5\].id.delayenb0 ring.dstage\[5\].id.delayenb1/A trim_a[5] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[5\].id.delayen0/Z sky130_fd_sc_hd__einvn_8
+XFILLER_28_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_17_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_28_69 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_28_58 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_5_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[4\].id.delayen0 ring.dstage\[4\].id.delayen0/A trim_a[4] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[4\].id.delayen0/Z sky130_fd_sc_hd__einvp_2
+XFILLER_39_57 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_30_59 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_30_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_14_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XPHY_59 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_25_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XPHY_48 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_26 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_37 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XANTENNA_ring.dstage\[4\].id.delayenb1_TE_B trim_a[17] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_36_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_22_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_8_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xring.ibufp00 ring.ibufp00/A vssd1 vssd1 vccd1 vccd1 ring.ibufp01/A sky130_fd_sc_hd__clkinv_2
+XFILLER_33_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_17_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[9\].id.delaybuf1 ring.dstage\[9\].id.delayenb1/A vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[9\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+Xring.dstage\[5\].id.delayenb1 ring.dstage\[5\].id.delayenb1/A trim_a[18] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[5\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+XFILLER_0_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_44_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_28_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[4\].id.delayen1 ring.dstage\[4\].id.delayen1/A trim_a[17] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[4\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+XFILLER_39_47 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_30_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XANTENNA_ring.dstage\[8\].id.delayenb0_TE_B trim_a[8] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_25_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XPHY_49 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_6_40 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_6_73 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XPHY_16 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_38 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_41_59 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_41_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XTAP_140 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_36_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_7_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_3_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.ibufp01 ring.ibufp01/A vssd1 vssd1 vccd1 vccd1 _25_/A1 sky130_fd_sc_hd__clkinv_8
+XFILLER_17_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_33_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_0_64 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_44_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_28_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_39_15 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[1\].id.delayenb0 ring.dstage\[1\].id.delayenb1/A trim_a[1] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[1\].id.delayen0/Z sky130_fd_sc_hd__einvn_8
+XFILLER_14_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[5\].id.delaybuf0 ring.dstage\[4\].id.delayen0/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[5\].id.delayenb1/A sky130_fd_sc_hd__clkbuf_2
+XFILLER_22_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[8\].id.delayint0 ring.dstage\[8\].id.delayen1/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[8\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+XPHY_17 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_28 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_41_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_25_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.iss.delayint0 ring.iss.delayen1/Z vssd1 vssd1 vccd1 vccd1 ring.iss.delayen0/A
++ sky130_fd_sc_hd__clkinv_1
+XPHY_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_15_61 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XTAP_141 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_36_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XTAP_130 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_22_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_33_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_0_21 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_44_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_9_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_30_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[1\].id.delayenb1 ring.dstage\[1\].id.delayenb1/A trim_a[14] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[1\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+XFILLER_15_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[5\].id.delaybuf1 ring.dstage\[5\].id.delayenb1/A vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[5\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+XFILLER_39_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_41_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XPHY_18 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XPHY_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_31_72 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XTAP_142 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_131 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_120 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_45_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[11\].id.delayenb0 ring.dstage\[11\].id.delayenb1/A trim_a[11] vssd1
++ vssd1 vccd1 vccd1 ring.iss.delayenb1/A sky130_fd_sc_hd__einvn_8
+XFILLER_23_62 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_0_33 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_28_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[1\].id.delayen0 ring.dstage\[1\].id.delayen0/A trim_a[1] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[1\].id.delayen0/Z sky130_fd_sc_hd__einvp_2
+XFILLER_9_75 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XFILLER_18_62 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_18_73 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_39_39 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XANTENNA_ring.dstage\[2\].id.delayen1_TE trim_a[15] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_45_71 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_45_60 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_6_21 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_20_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_20_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[10\].id.delayen1_TE trim_a[23] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+Xring.dstage\[1\].id.delaybuf0 ring.dstage\[0\].id.delayen0/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[1\].id.delayenb1/A sky130_fd_sc_hd__clkbuf_2
+XPHY_19 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
+XFILLER_31_51 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_15_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[4\].id.delayint0 ring.dstage\[4\].id.delayen1/Z vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[4\].id.delayen0/A sky130_fd_sc_hd__clkinv_1
+XTAP_132 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_36_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XTAP_121 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_110 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_26_62 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_26_51 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_3_77 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[7\].id.delayen1_TE trim_a[20] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_37_61 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+XFILLER_5_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XFILLER_12_75 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+XFILLER_38_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+Xring.dstage\[11\].id.delayenb1 ring.dstage\[11\].id.delayenb1/A trim_a[24] vssd1
++ vssd1 vccd1 vccd1 ring.dstage\[11\].id.delayen1/Z sky130_fd_sc_hd__einvn_4
+XFILLER_23_52 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_0_45 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[1\].id.delayen1 ring.dstage\[1\].id.delayen1/A trim_a[14] vssd1 vssd1
++ vccd1 vccd1 ring.dstage\[1\].id.delayen1/Z sky130_fd_sc_hd__einvp_2
+XFILLER_9_32 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_44_29 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XANTENNA_ring.dstage\[3\].id.delayenb0_TE_B trim_a[3] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_18_41 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+XFILLER_34_62 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_34_51 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XFILLER_34_40 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+XANTENNA_ring.dstage\[11\].id.delayenb0_TE_B trim_a[11] vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+XFILLER_6_33 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
+Xring.dstage\[1\].id.delaybuf1 ring.dstage\[1\].id.delayenb1/A vssd1 vssd1 vccd1 vccd1
++ ring.dstage\[1\].id.delayen1/A sky130_fd_sc_hd__clkbuf_1
+XFILLER_20_3 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_12
+XTAP_133 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_122 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_100 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_111 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
+.ends
+

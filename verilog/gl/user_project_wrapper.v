@@ -53,8 +53,104 @@ module user_project_wrapper (user_clock2,
  output [31:0] wbs_dat_o;
  input [3:0] wbs_sel_i;
 
+ wire ring0_clk;
+ wire \ring0_clkmux[0] ;
+ wire \ring0_clkmux[1] ;
+ wire \ring0_clkmux[2] ;
+ wire ring0_start;
+ wire \ring0_trim_a[0] ;
+ wire \ring0_trim_a[10] ;
+ wire \ring0_trim_a[11] ;
+ wire \ring0_trim_a[12] ;
+ wire \ring0_trim_a[13] ;
+ wire \ring0_trim_a[14] ;
+ wire \ring0_trim_a[15] ;
+ wire \ring0_trim_a[16] ;
+ wire \ring0_trim_a[17] ;
+ wire \ring0_trim_a[18] ;
+ wire \ring0_trim_a[19] ;
+ wire \ring0_trim_a[1] ;
+ wire \ring0_trim_a[20] ;
+ wire \ring0_trim_a[21] ;
+ wire \ring0_trim_a[22] ;
+ wire \ring0_trim_a[23] ;
+ wire \ring0_trim_a[24] ;
+ wire \ring0_trim_a[25] ;
+ wire \ring0_trim_a[26] ;
+ wire \ring0_trim_a[27] ;
+ wire \ring0_trim_a[2] ;
+ wire \ring0_trim_a[3] ;
+ wire \ring0_trim_a[4] ;
+ wire \ring0_trim_a[5] ;
+ wire \ring0_trim_a[6] ;
+ wire \ring0_trim_a[7] ;
+ wire \ring0_trim_a[8] ;
+ wire \ring0_trim_a[9] ;
+ wire \ring0_trim_b[0] ;
+ wire \ring0_trim_b[10] ;
+ wire \ring0_trim_b[11] ;
+ wire \ring0_trim_b[12] ;
+ wire \ring0_trim_b[13] ;
+ wire \ring0_trim_b[14] ;
+ wire \ring0_trim_b[15] ;
+ wire \ring0_trim_b[16] ;
+ wire \ring0_trim_b[17] ;
+ wire \ring0_trim_b[18] ;
+ wire \ring0_trim_b[19] ;
+ wire \ring0_trim_b[1] ;
+ wire \ring0_trim_b[20] ;
+ wire \ring0_trim_b[21] ;
+ wire \ring0_trim_b[22] ;
+ wire \ring0_trim_b[23] ;
+ wire \ring0_trim_b[24] ;
+ wire \ring0_trim_b[25] ;
+ wire \ring0_trim_b[26] ;
+ wire \ring0_trim_b[27] ;
+ wire \ring0_trim_b[2] ;
+ wire \ring0_trim_b[3] ;
+ wire \ring0_trim_b[4] ;
+ wire \ring0_trim_b[5] ;
+ wire \ring0_trim_b[6] ;
+ wire \ring0_trim_b[7] ;
+ wire \ring0_trim_b[8] ;
+ wire \ring0_trim_b[9] ;
+ wire ring1_clk;
+ wire \ring1_clkmux[0] ;
+ wire \ring1_clkmux[1] ;
+ wire \ring1_clkmux[2] ;
+ wire ring1_start;
+ wire \ring1_trim_a[0] ;
+ wire \ring1_trim_a[10] ;
+ wire \ring1_trim_a[11] ;
+ wire \ring1_trim_a[12] ;
+ wire \ring1_trim_a[13] ;
+ wire \ring1_trim_a[14] ;
+ wire \ring1_trim_a[15] ;
+ wire \ring1_trim_a[16] ;
+ wire \ring1_trim_a[17] ;
+ wire \ring1_trim_a[18] ;
+ wire \ring1_trim_a[19] ;
+ wire \ring1_trim_a[1] ;
+ wire \ring1_trim_a[20] ;
+ wire \ring1_trim_a[21] ;
+ wire \ring1_trim_a[22] ;
+ wire \ring1_trim_a[23] ;
+ wire \ring1_trim_a[24] ;
+ wire \ring1_trim_a[25] ;
+ wire \ring1_trim_a[2] ;
+ wire \ring1_trim_a[3] ;
+ wire \ring1_trim_a[4] ;
+ wire \ring1_trim_a[5] ;
+ wire \ring1_trim_a[6] ;
+ wire \ring1_trim_a[7] ;
+ wire \ring1_trim_a[8] ;
+ wire \ring1_trim_a[9] ;
 
- user_proj_example mprj (.vccd1(vccd1),
+ digitalcore_macro digitalcore (.ring0_clk(ring0_clk),
+    .ring0_start(ring0_start),
+    .ring1_clk(ring1_clk),
+    .ring1_start(ring1_start),
+    .vccd1(vccd1),
     .vssd1(vssd1),
     .wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
@@ -563,6 +659,94 @@ module user_project_wrapper (user_clock2,
     la_oenb[2],
     la_oenb[1],
     la_oenb[0]}),
+    .ring0_clkmux({\ring0_clkmux[2] ,
+    \ring0_clkmux[1] ,
+    \ring0_clkmux[0] }),
+    .ring0_trim_a({\ring0_trim_a[27] ,
+    \ring0_trim_a[26] ,
+    \ring0_trim_a[25] ,
+    \ring0_trim_a[24] ,
+    \ring0_trim_a[23] ,
+    \ring0_trim_a[22] ,
+    \ring0_trim_a[21] ,
+    \ring0_trim_a[20] ,
+    \ring0_trim_a[19] ,
+    \ring0_trim_a[18] ,
+    \ring0_trim_a[17] ,
+    \ring0_trim_a[16] ,
+    \ring0_trim_a[15] ,
+    \ring0_trim_a[14] ,
+    \ring0_trim_a[13] ,
+    \ring0_trim_a[12] ,
+    \ring0_trim_a[11] ,
+    \ring0_trim_a[10] ,
+    \ring0_trim_a[9] ,
+    \ring0_trim_a[8] ,
+    \ring0_trim_a[7] ,
+    \ring0_trim_a[6] ,
+    \ring0_trim_a[5] ,
+    \ring0_trim_a[4] ,
+    \ring0_trim_a[3] ,
+    \ring0_trim_a[2] ,
+    \ring0_trim_a[1] ,
+    \ring0_trim_a[0] }),
+    .ring0_trim_b({\ring0_trim_b[27] ,
+    \ring0_trim_b[26] ,
+    \ring0_trim_b[25] ,
+    \ring0_trim_b[24] ,
+    \ring0_trim_b[23] ,
+    \ring0_trim_b[22] ,
+    \ring0_trim_b[21] ,
+    \ring0_trim_b[20] ,
+    \ring0_trim_b[19] ,
+    \ring0_trim_b[18] ,
+    \ring0_trim_b[17] ,
+    \ring0_trim_b[16] ,
+    \ring0_trim_b[15] ,
+    \ring0_trim_b[14] ,
+    \ring0_trim_b[13] ,
+    \ring0_trim_b[12] ,
+    \ring0_trim_b[11] ,
+    \ring0_trim_b[10] ,
+    \ring0_trim_b[9] ,
+    \ring0_trim_b[8] ,
+    \ring0_trim_b[7] ,
+    \ring0_trim_b[6] ,
+    \ring0_trim_b[5] ,
+    \ring0_trim_b[4] ,
+    \ring0_trim_b[3] ,
+    \ring0_trim_b[2] ,
+    \ring0_trim_b[1] ,
+    \ring0_trim_b[0] }),
+    .ring1_clkmux({\ring1_clkmux[2] ,
+    \ring1_clkmux[1] ,
+    \ring1_clkmux[0] }),
+    .ring1_trim_a({\ring1_trim_a[25] ,
+    \ring1_trim_a[24] ,
+    \ring1_trim_a[23] ,
+    \ring1_trim_a[22] ,
+    \ring1_trim_a[21] ,
+    \ring1_trim_a[20] ,
+    \ring1_trim_a[19] ,
+    \ring1_trim_a[18] ,
+    \ring1_trim_a[17] ,
+    \ring1_trim_a[16] ,
+    \ring1_trim_a[15] ,
+    \ring1_trim_a[14] ,
+    \ring1_trim_a[13] ,
+    \ring1_trim_a[12] ,
+    \ring1_trim_a[11] ,
+    \ring1_trim_a[10] ,
+    \ring1_trim_a[9] ,
+    \ring1_trim_a[8] ,
+    \ring1_trim_a[7] ,
+    \ring1_trim_a[6] ,
+    \ring1_trim_a[5] ,
+    \ring1_trim_a[4] ,
+    \ring1_trim_a[3] ,
+    \ring1_trim_a[2] ,
+    \ring1_trim_a[1] ,
+    \ring1_trim_a[0] }),
     .wbs_adr_i({wbs_adr_i[31],
     wbs_adr_i[30],
     wbs_adr_i[29],
@@ -663,4 +847,100 @@ module user_project_wrapper (user_clock2,
     wbs_sel_i[2],
     wbs_sel_i[1],
     wbs_sel_i[0]}));
+ collapsering_macro ring0 (.clk_out(ring0_clk),
+    .start(ring0_start),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+    .clkmux({\ring0_clkmux[2] ,
+    \ring0_clkmux[1] ,
+    \ring0_clkmux[0] }),
+    .trim_a({\ring0_trim_a[27] ,
+    \ring0_trim_a[26] ,
+    \ring0_trim_a[25] ,
+    \ring0_trim_a[24] ,
+    \ring0_trim_a[23] ,
+    \ring0_trim_a[22] ,
+    \ring0_trim_a[21] ,
+    \ring0_trim_a[20] ,
+    \ring0_trim_a[19] ,
+    \ring0_trim_a[18] ,
+    \ring0_trim_a[17] ,
+    \ring0_trim_a[16] ,
+    \ring0_trim_a[15] ,
+    \ring0_trim_a[14] ,
+    \ring0_trim_a[13] ,
+    \ring0_trim_a[12] ,
+    \ring0_trim_a[11] ,
+    \ring0_trim_a[10] ,
+    \ring0_trim_a[9] ,
+    \ring0_trim_a[8] ,
+    \ring0_trim_a[7] ,
+    \ring0_trim_a[6] ,
+    \ring0_trim_a[5] ,
+    \ring0_trim_a[4] ,
+    \ring0_trim_a[3] ,
+    \ring0_trim_a[2] ,
+    \ring0_trim_a[1] ,
+    \ring0_trim_a[0] }),
+    .trim_b({\ring0_trim_b[27] ,
+    \ring0_trim_b[26] ,
+    \ring0_trim_b[25] ,
+    \ring0_trim_b[24] ,
+    \ring0_trim_b[23] ,
+    \ring0_trim_b[22] ,
+    \ring0_trim_b[21] ,
+    \ring0_trim_b[20] ,
+    \ring0_trim_b[19] ,
+    \ring0_trim_b[18] ,
+    \ring0_trim_b[17] ,
+    \ring0_trim_b[16] ,
+    \ring0_trim_b[15] ,
+    \ring0_trim_b[14] ,
+    \ring0_trim_b[13] ,
+    \ring0_trim_b[12] ,
+    \ring0_trim_b[11] ,
+    \ring0_trim_b[10] ,
+    \ring0_trim_b[9] ,
+    \ring0_trim_b[8] ,
+    \ring0_trim_b[7] ,
+    \ring0_trim_b[6] ,
+    \ring0_trim_b[5] ,
+    \ring0_trim_b[4] ,
+    \ring0_trim_b[3] ,
+    \ring0_trim_b[2] ,
+    \ring0_trim_b[1] ,
+    \ring0_trim_b[0] }));
+ ringosc_macro ring1 (.clk_out(ring1_clk),
+    .start(ring1_start),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+    .clkmux({\ring1_clkmux[2] ,
+    \ring1_clkmux[1] ,
+    \ring1_clkmux[0] }),
+    .trim_a({\ring1_trim_a[25] ,
+    \ring1_trim_a[24] ,
+    \ring1_trim_a[23] ,
+    \ring1_trim_a[22] ,
+    \ring1_trim_a[21] ,
+    \ring1_trim_a[20] ,
+    \ring1_trim_a[19] ,
+    \ring1_trim_a[18] ,
+    \ring1_trim_a[17] ,
+    \ring1_trim_a[16] ,
+    \ring1_trim_a[15] ,
+    \ring1_trim_a[14] ,
+    \ring1_trim_a[13] ,
+    \ring1_trim_a[12] ,
+    \ring1_trim_a[11] ,
+    \ring1_trim_a[10] ,
+    \ring1_trim_a[9] ,
+    \ring1_trim_a[8] ,
+    \ring1_trim_a[7] ,
+    \ring1_trim_a[6] ,
+    \ring1_trim_a[5] ,
+    \ring1_trim_a[4] ,
+    \ring1_trim_a[3] ,
+    \ring1_trim_a[2] ,
+    \ring1_trim_a[1] ,
+    \ring1_trim_a[0] }));
 endmodule
