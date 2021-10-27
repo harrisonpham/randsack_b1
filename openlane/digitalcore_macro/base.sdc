@@ -15,13 +15,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-set ::env(WB_CLOCK_PERIOD)    "15"
+set ::env(WB_CLOCK_PERIOD)    "10"
 set ::env(WB_CLOCK_PORT)      "wb_clk_i"
 
-set ::env(RING0_CLOCK_PERIOD) "15"
+set ::env(RING0_CLOCK_PERIOD) "5"
 set ::env(RING0_CLOCK_PORT)   "ring0_clk"
 
-set ::env(RING1_CLOCK_PERIOD) "15"
+set ::env(RING1_CLOCK_PERIOD) "5"
 set ::env(RING1_CLOCK_PORT)   "ring1_clk"
 
 if {[info exists ::env(WB_CLOCK_PORT)] && $::env(WB_CLOCK_PORT) != ""} {
@@ -59,3 +59,9 @@ set_load  $cap_load [all_outputs]
 # NOTE: These don't need any input/output delays since this design just uses it for clock counting.
 create_clock [get_ports $::env(RING0_CLOCK_PORT)] -name $::env(RING0_CLOCK_PORT) -period $::env(RING0_CLOCK_PERIOD)
 create_clock [get_ports $::env(RING1_CLOCK_PORT)] -name $::env(RING1_CLOCK_PORT) -period $::env(RING1_CLOCK_PERIOD)
+
+set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING0_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING1_CLOCK_PORT)]
+
+set_false_path -from [get_clocks $::env(RING0_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(RING1_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]

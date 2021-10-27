@@ -32,11 +32,13 @@ set ::env(BASE_SDC_FILE) "$script_dir/base.sdc"
 
 # NOTE: Make sure to add all clocks manually to base.sdc!
 set ::env(CLOCK_PORT) "wb_clk_i ring0_clk ring1_clk"
-set ::env(CLOCK_PERIOD) "15"
+set ::env(CLOCK_PERIOD) "10"
 
-# Try to minimize fanout to fix slew violations.
+# Various options to tweak if there are slew / hold issues.
+# set ::env(PL_RESIZER_ALLOW_SETUP_VIOS) 1
 # set ::env(SYNTH_MAX_FANOUT) 4
-# set ::env(CLOCK_BUFFER_FANOUT) 14
+# set ::env(CLOCK_BUFFER_FANOUT) 12
+# set ::env(CTS_CLK_BUFFER_LIST) "sky130_fd_sc_hd__clkbuf_4 sky130_fd_sc_hd__clkbuf_8"
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 500 500"
@@ -60,4 +62,4 @@ set ::env(DIODE_INSERTION_STRATEGY) 4
 # If you're going to use multiple power domains, then disable cvc run.
 set ::env(RUN_CVC) 1
 
-set ::env(ROUTING_CORES) 10
+set ::env(ROUTING_CORES) 6

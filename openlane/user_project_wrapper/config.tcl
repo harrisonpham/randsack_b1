@@ -71,7 +71,7 @@ set ::env(GLB_RT_MAXLAYER) 5
 set ::env(GLB_RT_OBS)  "li1 0 0 2920 3520"
 
 set ::env(GLB_RT_ALLOW_CONGESTION) 1
-set ::env(GLB_RT_ADJUSTMENT) 0.60
+set ::env(GLB_RT_ADJUSTMENT) 0.10
 # set ::env(ROUTING_OPT_ITERS) 128
 
 # disable pdn check nodes becuase it hangs with multiple power domains.
@@ -94,4 +94,4 @@ set ::env(FILL_INSERTION) 0
 set ::env(TAP_DECAP_INSERTION) 0
 set ::env(CLOCK_TREE_SYNTH) 0
 
-set ::env(ROUTING_CORES) 10
+set ::env(ROUTING_CORES) 6

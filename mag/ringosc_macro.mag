@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1635110697
+timestamp 1635306840
 << viali >>
 rect 7113 27489 7147 27523
 rect 7573 27421 7607 27455
@@ -14531,3019 +14531,3019 @@ rect 7669 2688 7685 2752
 rect 7749 2688 7757 2752
 rect 7437 2128 7757 2688
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[1\].id.delayenb0_TE_B $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 2760 0 -1 3264
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_6  FILLER_0_15 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 2176
 box -38 -48 590 592
 use sky130_fd_sc_hd__fill_1  FILLER_0_21 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3036 0 1 2176
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_0_3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 2176
 box -38 -48 1142 592
 use sky130_fd_sc_hd__fill_1  FILLER_1_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 3264
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_1_18 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2760 0 -1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_12  FILLER_1_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 3264
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 2176
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_2
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 3264
 box -38 -48 314 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_94 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 2176
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_1_30
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3864 0 -1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_1_24
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3312 0 -1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_2  FILLER_0_29 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 2176
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_0_24
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3312 0 1 2176
 box -38 -48 406 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[1\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3128 0 1 2176
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__26__RESET_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 3312 0 -1 3264
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__21__C
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3956 0 1 2176
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__12__A
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 -1 3264
 box -38 -48 222 592
 use sky130_fd_sc_hd__nor3_2  _21_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4508 0 1 2176
 box -38 -48 774 592
 use sky130_fd_sc_hd__inv_2  _12_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4232 0 -1 3264
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_1_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 -1 3264
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_1_37
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4508 0 -1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_0_33
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4140 0 1 2176
 box -38 -48 406 592
 use sky130_fd_sc_hd__mux2_1  _23_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4968 0 -1 3264
 box -38 -48 866 592
 use sky130_fd_sc_hd__inv_2  _16_
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5612 0 1 2176
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_1_51
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5796 0 -1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_0_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 1 2176
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_0_45
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5244 0 1 2176
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[1\].id.delayen0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7728 0 1 2176
 box -38 -48 682 592
 use sky130_fd_sc_hd__inv_2  _17_
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6624 0 1 2176
 box -38 -48 314 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_96
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 3264
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_95
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 1 2176
 box -38 -48 130 592
 use sky130_fd_sc_hd__fill_2  FILLER_1_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 3264
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_1  FILLER_1_55
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 -1 3264
 box -38 -48 130 592
 use sky130_fd_sc_hd__fill_1  FILLER_0_64
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6992 0 1 2176
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_0_60
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6624 0 1 2176
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[1\].id.delayenb0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6532 0 -1 3264
 box -38 -48 1694 592
 use sky130_fd_sc_hd__decap_8  FILLER_0_72 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7728 0 1 2176
 box -38 -48 774 592
 use sky130_fd_sc_hd__fill_1  FILLER_0_80
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8464 0 1 2176
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_1_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 2176
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_3
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 3264
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__18__C
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 2760 0 1 3264
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_1  FILLER_2_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 3264
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_2_18
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2760 0 1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_12  FILLER_2_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 3264
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_4
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 3264
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__18__A
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 3264
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__18__B
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3128 0 1 3264
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_2_24
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3312 0 1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_2_31
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3956 0 1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_2_43
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5060 0 1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_97
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 3264
 box -38 -48 130 592
 use sky130_fd_sc_hd__nor3_2  _18_
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4324 0 1 3264
 box -38 -48 774 592
 use sky130_fd_sc_hd__dfrtp_2  _26_ $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 1 3264
 box -38 -48 1970 592
 use sky130_fd_sc_hd__decap_4  FILLER_2_68
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7360 0 1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_2_72
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7728 0 1 3264
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_2_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_5
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 3264
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[2\].id.delaybuf0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 3264
 box -38 -48 406 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__20__A
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2208 0 -1 4352
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[2\].id.delayenb0_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 1840 0 -1 4352
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_3_14
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2392 0 -1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  FILLER_3_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 4352
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_3_8
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1840 0 -1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_6
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 4352
 box -38 -48 314 592
 use sky130_fd_sc_hd__nor3_2  _20_
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2760 0 -1 4352
 box -38 -48 774 592
 use sky130_fd_sc_hd__decap_4  FILLER_3_26
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3496 0 -1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_3_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__mux2_1  _22_
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5060 0 -1 4352
 box -38 -48 866 592
 use sky130_fd_sc_hd__mux2_1  _24_
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4692 0 -1 4352
 box -38 -48 866 592
 use sky130_fd_sc_hd__decap_4  FILLER_3_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_2  FILLER_3_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 4352
 box -38 -48 222 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_98
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 4352
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[2\].id.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 -1 4352
 box -38 -48 1694 592
 use sky130_fd_sc_hd__decap_4  FILLER_3_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_7
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 4352
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__20__C
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 2760 0 1 4352
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_1  FILLER_4_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 4352
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_4_18
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2760 0 1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_12  FILLER_4_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 4352
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_8
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 4352
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__19__B
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3128 0 1 4352
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_4_24
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3312 0 1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_4_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_4_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_99
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 4352
 box -38 -48 130 592
 use sky130_fd_sc_hd__nor3_2  _19_
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4876 0 1 4352
 box -38 -48 774 592
 use sky130_fd_sc_hd__dfrtp_2  _27_
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7176 0 1 4352
 box -38 -48 1970 592
 use sky130_fd_sc_hd__decap_4  FILLER_4_66
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7176 0 1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_4_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 4352
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_9
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 4352
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[2\].id.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 4352
 box -38 -48 682 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[2\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 3220 0 -1 5440
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[2\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 2668 0 -1 5440
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_5_17
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2668 0 -1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_12  FILLER_5_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 5440
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_10
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 5440
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__13__A
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 5440
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_5_23
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3220 0 -1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_5_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 -1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_5_36
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4416 0 -1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__inv_2  _13_
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4416 0 -1 5440
 box -38 -48 314 592
 use sky130_fd_sc_hd__mux2_1  _25_
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5612 0 -1 5440
 box -38 -48 866 592
 use sky130_fd_sc_hd__decap_6  FILLER_5_49
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5612 0 -1 5440
 box -38 -48 590 592
 use sky130_fd_sc_hd__fill_1  FILLER_5_55
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 -1 5440
 box -38 -48 130 592
 use sky130_fd_sc_hd__fill_1  FILLER_5_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 5440
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_5_62
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6808 0 -1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_100
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 5440
 box -38 -48 130 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[3\].id.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6808 0 -1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_5_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_11
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 5440
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[2\].id.delayenb1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 -1 5440
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_6  FILLER_6_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 5440
 box -38 -48 590 592
 use sky130_fd_sc_hd__fill_1  FILLER_6_21
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3036 0 1 5440
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_6_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 5440
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_7_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 6528
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_7_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 6528
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_12
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 5440
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_14
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 6528
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_6_24
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3312 0 1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[2\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3128 0 1 5440
 box -38 -48 222 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_101
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 5440
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_7_31
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3956 0 -1 6528
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_2  FILLER_7_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 6528
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_2  FILLER_6_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 5440
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[1\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 3956 0 -1 6528
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__19__C
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4140 0 1 5440
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_6_33
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4140 0 1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[1\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4324 0 -1 6528
 box -38 -48 222 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[2\].id.delayint0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5152 0 -1 6528
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[2\].id.delaybuf1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4784 0 1 5440
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_7_37
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4508 0 -1 6528
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_6_40
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4784 0 1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[2\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6440 0 1 5440
 box -38 -48 682 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[1\].id.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5428 0 1 5440
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[1\].id.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5520 0 -1 6528
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_7_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 6528
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_7_44
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5152 0 -1 6528
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_6_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[1\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6900 0 -1 6528
 box -38 -48 682 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_102
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 6528
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_7_59
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6532 0 -1 6528
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_6_58
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6440 0 1 5440
 box -38 -48 406 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__27__RESET_B
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 6528
 box -38 -48 222 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[1\].id.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7820 0 1 5440
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_8  FILLER_6_73
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7820 0 1 5440
 box -38 -48 774 592
 use sky130_fd_sc_hd__decap_4  FILLER_7_70
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7544 0 -1 6528
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_7_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 6528
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_13
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 5440
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_15
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 6528
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[1\].id.delaybuf1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7912 0 -1 6528
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_8_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 6528
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_8_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 6528
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_16
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 6528
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_8_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 6528
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_6  FILLER_8_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 6528
 box -38 -48 590 592
 use sky130_fd_sc_hd__fill_1  FILLER_8_35
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4324 0 1 6528
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_8_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 1 6528
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_103
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 6528
 box -38 -48 130 592
 use sky130_fd_sc_hd__inv_2  _15_
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4416 0 1 6528
 box -38 -48 314 592
 use sky130_fd_sc_hd__dfrtp_2  _28_
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5060 0 1 6528
 box -38 -48 1970 592
 use sky130_fd_sc_hd__decap_4  FILLER_8_64
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6992 0 1 6528
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_6  FILLER_8_75
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8004 0 1 6528
 box -38 -48 590 592
 use sky130_fd_sc_hd__decap_3  PHY_17
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 6528
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[0\].id.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8004 0 1 6528
 box -38 -48 682 592
 use sky130_fd_sc_hd__decap_12  FILLER_9_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 7616
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_9_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 7616
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_18
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 7616
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__28__RESET_B
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4968 0 -1 7616
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[0\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4416 0 -1 7616
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[0\].id.delayenb0_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4048 0 -1 7616
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_3  FILLER_9_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 7616
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_9_32
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4048 0 -1 7616
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_9_38
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4600 0 -1 7616
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_9_44
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5152 0 -1 7616
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_9_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 7616
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_104
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 7616
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[0\].id.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 7616
 box -38 -48 1694 592
 use sky130_fd_sc_hd__clkinv_2  ring.ibufp00 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5520 0 -1 7616
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_6  FILLER_9_75
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8004 0 -1 7616
 box -38 -48 590 592
 use sky130_fd_sc_hd__decap_3  PHY_19
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 7616
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_6  FILLER_10_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 7616
 box -38 -48 590 592
 use sky130_fd_sc_hd__fill_1  FILLER_10_21
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3036 0 1 7616
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_10_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 7616
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_20
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 7616
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA__14__A
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4416 0 1 7616
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[3\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 3312 0 1 7616
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_10_24
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3312 0 1 7616
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_10_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 7616
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_10_33
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4140 0 1 7616
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_10_36
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4416 0 1 7616
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_10_43
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5060 0 1 7616
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_105
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 7616
 box -38 -48 130 592
 use sky130_fd_sc_hd__inv_2  _14_
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4784 0 1 7616
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_6  FILLER_10_60
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6624 0 1 7616
 box -38 -48 590 592
 use sky130_fd_sc_hd__clkinv_8  ring.ibufp01 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 1 7616
 box -38 -48 1234 592
 use sky130_fd_sc_hd__decap_4  FILLER_10_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 7616
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_21
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 7616
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[3\].id.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 7616
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_12  FILLER_11_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 8704
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_11_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 8704
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_22
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 8704
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[3\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4232 0 -1 8704
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_11_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 8704
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_11_31
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3956 0 -1 8704
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_11_34
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4232 0 -1 8704
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_11_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 -1 8704
 box -38 -48 406 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[3\].id.delaybuf1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4876 0 -1 8704
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_11_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 8704
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_2  FILLER_11_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 8704
 box -38 -48 222 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_106
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 8704
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[3\].id.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5244 0 -1 8704
 box -38 -48 682 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[3\].id.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 -1 8704
 box -38 -48 1694 592
 use sky130_fd_sc_hd__decap_4  FILLER_11_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 8704
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_23
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 8704
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_12_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 8704
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_12_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 8704
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_24
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 8704
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[3\].id.delayenb0_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5060 0 1 8704
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_1  FILLER_12_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 8704
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_12_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 8704
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_4  FILLER_12_43
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5060 0 1 8704
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_107
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 8704
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[0\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5612 0 1 8704
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_12_49
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5612 0 1 8704
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_12_56
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 1 8704
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[0\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6624 0 1 8704
 box -38 -48 682 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[0\].id.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6256 0 1 8704
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_12_67
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7268 0 1 8704
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_6  FILLER_12_75
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8004 0 1 8704
 box -38 -48 590 592
 use sky130_fd_sc_hd__decap_3  PHY_25
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 8704
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[0\].id.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7636 0 1 8704
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_12  FILLER_13_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 9792
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_13_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 9792
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_14_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 9792
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_14_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 9792
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_26
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 9792
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_28
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 9792
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_13_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 9792
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_8  FILLER_13_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 9792
 box -38 -48 774 592
 use sky130_fd_sc_hd__fill_1  FILLER_14_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 9792
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_14_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 9792
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_14_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 9792
 box -38 -48 1142 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_109
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 9792
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_14_53
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5980 0 1 9792
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_13_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 9792
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  FILLER_13_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 -1 9792
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[0\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5704 0 -1 9792
 box -38 -48 222 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[3\].id.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7176 0 1 9792
 box -38 -48 314 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_108
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 9792
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_14_59
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6532 0 1 9792
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_13_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 9792
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[3\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 1 9792
 box -38 -48 222 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[0\].id.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6440 0 -1 9792
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_4  FILLER_13_69
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7452 0 -1 9792
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_13_76
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8096 0 -1 9792
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_13_80
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8464 0 -1 9792
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_14_66
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7176 0 1 9792
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_14_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 9792
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_27
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 9792
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_29
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 9792
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[0\].id.delaybuf1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7820 0 -1 9792
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[3\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 9792
 box -38 -48 682 592
 use sky130_fd_sc_hd__decap_12  FILLER_15_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 10880
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_15_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 10880
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_30
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 10880
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_15_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 10880
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_8  FILLER_15_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 10880
 box -38 -48 774 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[4\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5888 0 -1 10880
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_3  FILLER_15_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 -1 10880
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_15_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 10880
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_15_61
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6716 0 -1 10880
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_110
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 10880
 box -38 -48 130 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[4\].id.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 10880
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[4\].id.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8096 0 -1 10880
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_4  FILLER_15_76
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8096 0 -1 10880
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_15_80
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8464 0 -1 10880
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_3  PHY_31
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 10880
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_16_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 10880
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_16_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 10880
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_32
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 10880
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_16_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 10880
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_16_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 10880
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_4  FILLER_16_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 10880
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_111
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 10880
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[4\].id.delayenb0_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5520 0 1 10880
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_1  FILLER_16_45
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5244 0 1 10880
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_16_48
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5520 0 1 10880
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_16_55
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 1 10880
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[4\].id.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 10880
 box -38 -48 1694 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[4\].id.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6164 0 1 10880
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_16_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 10880
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_33
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 10880
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_17_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 11968
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_17_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 11968
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_34
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 11968
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_17_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 11968
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_8  FILLER_17_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 11968
 box -38 -48 774 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[4\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5704 0 -1 11968
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_3  FILLER_17_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 -1 11968
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_17_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 11968
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_17_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 11968
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_17_65
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7084 0 -1 11968
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_112
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 11968
 box -38 -48 130 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[5\].id.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6716 0 -1 11968
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_17_76
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8096 0 -1 11968
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_17_80
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8464 0 -1 11968
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_3  PHY_35
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 11968
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[4\].id.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8096 0 -1 11968
 box -38 -48 682 592
 use sky130_fd_sc_hd__decap_12  FILLER_18_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 11968
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_18_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 11968
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_36
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 11968
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_18_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 11968
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_18_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 11968
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_8  FILLER_18_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 11968
 box -38 -48 774 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_113
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 11968
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[4\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5796 0 1 11968
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_2  FILLER_18_49
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5612 0 1 11968
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_18_53
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5980 0 1 11968
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_18_62
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6808 0 1 11968
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvp_1  ring.iss.reseten0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 1 11968
 box -38 -48 498 592
 use sky130_fd_sc_hd__decap_8  FILLER_18_73
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7820 0 1 11968
 box -38 -48 774 592
 use sky130_fd_sc_hd__decap_3  PHY_37
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 11968
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[4\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7176 0 1 11968
 box -38 -48 682 592
 use sky130_fd_sc_hd__decap_12  FILLER_19_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 13056
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_19_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 13056
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_20_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 13056
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_20_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 13056
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_38
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 13056
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_40
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 13056
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_19_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 13056
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_19_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 13056
 box -38 -48 1142 592
 use sky130_fd_sc_hd__fill_1  FILLER_20_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 13056
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_20_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 13056
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_8  FILLER_20_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 13056
 box -38 -48 774 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_115
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 13056
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_20_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 1 13056
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_20_49
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5612 0 1 13056
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_19_51
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5796 0 -1 13056
 box -38 -48 406 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.iss.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5888 0 1 13056
 box -38 -48 222 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_114
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 13056
 box -38 -48 130 592
 use sky130_fd_sc_hd__fill_1  FILLER_20_56
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 1 13056
 box -38 -48 130 592
 use sky130_fd_sc_hd__fill_2  FILLER_19_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 13056
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_1  FILLER_19_55
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 -1 13056
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[5\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 1 13056
 box -38 -48 222 592
 use sky130_fd_sc_hd__conb_1  ring.iss.const1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6808 0 -1 13056
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[5\].id.delaybuf1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7176 0 1 13056
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_20_59
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6532 0 1 13056
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_19_62
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6808 0 -1 13056
 box -38 -48 406 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[5\].id.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7452 0 -1 13056
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[5\].id.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 13056
 box -38 -48 682 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[4\].id.delaybuf1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7820 0 -1 13056
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_20_66
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7176 0 1 13056
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_19_69
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7452 0 -1 13056
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_41
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 13056
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_39
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 13056
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_20_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 13056
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_19_80
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8464 0 -1 13056
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_19_76
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8096 0 -1 13056
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_12  FILLER_21_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 14144
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_21_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 14144
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_42
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 14144
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_21_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 14144
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_8  FILLER_21_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 14144
 box -38 -48 774 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[5\].id.delayenb0_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5888 0 -1 14144
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_3  FILLER_21_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 -1 14144
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_21_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 14144
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_2  FILLER_21_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 14144
 box -38 -48 222 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_116
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 14144
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[5\].id.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6532 0 -1 14144
 box -38 -48 1694 592
 use sky130_fd_sc_hd__decap_4  FILLER_21_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 14144
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_43
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 14144
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_22_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 14144
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_22_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 14144
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_44
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 14144
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_22_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 14144
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_22_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 14144
 box -38 -48 1142 592
 use sky130_fd_sc_hd__fill_2  FILLER_22_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 14144
 box -38 -48 222 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_117
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 14144
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvp_2  ring.iss.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5060 0 1 14144
 box -38 -48 682 592
 use sky130_fd_sc_hd__decap_4  FILLER_22_50
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5704 0 1 14144
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvn_8  ring.iss.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6072 0 1 14144
 box -38 -48 1694 592
 use sky130_fd_sc_hd__decap_8  FILLER_22_72
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7728 0 1 14144
 box -38 -48 774 592
 use sky130_fd_sc_hd__fill_1  FILLER_22_80
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8464 0 1 14144
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_3  PHY_45
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 14144
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_23_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 15232
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_23_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 15232
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_46
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 15232
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[5\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5152 0 -1 15232
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.iss.ctrlen0_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4600 0 -1 15232
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_8  FILLER_23_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 15232
 box -38 -48 774 592
 use sky130_fd_sc_hd__fill_1  FILLER_23_35
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4324 0 -1 15232
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_23_38
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4600 0 -1 15232
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_23_44
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5152 0 -1 15232
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_23_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 15232
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_23_62
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6808 0 -1 15232
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_118
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 15232
 box -38 -48 130 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[6\].id.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5520 0 -1 15232
 box -38 -48 406 592
 use sky130_fd_sc_hd__or2_2  ring.iss.ctrlen0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6808 0 -1 15232
 box -38 -48 498 592
 use sky130_fd_sc_hd__decap_4  FILLER_23_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 15232
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_47
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 15232
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[5\].id.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 -1 15232
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_12  FILLER_24_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 15232
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_24_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 15232
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_48
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 15232
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.iss.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4876 0 1 15232
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_1  FILLER_24_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 15232
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_8  FILLER_24_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 15232
 box -38 -48 774 592
 use sky130_fd_sc_hd__fill_2  FILLER_24_37
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4508 0 1 15232
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_24_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 15232
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_119
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 15232
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[5\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5244 0 1 15232
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_24_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 1 15232
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_24_54
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6072 0 1 15232
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_24_65
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7084 0 1 15232
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvp_2  ring.iss.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7084 0 1 15232
 box -38 -48 682 592
 use sky130_fd_sc_hd__clkinv_1  ring.iss.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6072 0 1 15232
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_24_76
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8096 0 1 15232
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_24_80
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8464 0 1 15232
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_3  PHY_49
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 15232
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[5\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8096 0 1 15232
 box -38 -48 682 592
 use sky130_fd_sc_hd__decap_12  FILLER_25_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 16320
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_25_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 16320
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_50
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 16320
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.iss.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5060 0 -1 16320
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_12  FILLER_25_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 16320
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_4  FILLER_25_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 16320
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_25_45
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5244 0 -1 16320
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_25_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 16320
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_2  FILLER_25_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 16320
 box -38 -48 222 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_120
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 16320
 box -38 -48 130 592
 use sky130_fd_sc_hd__clkbuf_1  ring.iss.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5888 0 -1 16320
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvn_4  ring.iss.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7544 0 -1 16320
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_4  FILLER_25_70
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7544 0 -1 16320
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_25_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 16320
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_51
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 16320
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[6\].id.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7912 0 -1 16320
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_26_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 16320
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_26_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 16320
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_27_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 17408
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_27_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 17408
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 16320
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_54
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 17408
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[6\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5244 0 1 16320
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_1  FILLER_26_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 16320
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_26_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 16320
 box -38 -48 1142 592
 use sky130_fd_sc_hd__fill_2  FILLER_26_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 16320
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_12  FILLER_27_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 17408
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_8  FILLER_27_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 17408
 box -38 -48 774 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_121
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 16320
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_27_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 17408
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  FILLER_27_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 -1 17408
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_26_51
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5796 0 1 16320
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_26_45
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5244 0 1 16320
 box -38 -48 406 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[6\].id.delayenb0_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5704 0 -1 17408
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[6\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5796 0 1 16320
 box -38 -48 222 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[6\].id.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 1 16320
 box -38 -48 682 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_122
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 17408
 box -38 -48 130 592
 use sky130_fd_sc_hd__fill_2  FILLER_27_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 17408
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_26_62
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6808 0 1 16320
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[6\].id.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 -1 17408
 box -38 -48 1694 592
 use sky130_fd_sc_hd__decap_4  FILLER_26_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 16320
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_27_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 17408
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_53
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 16320
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_55
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 17408
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[6\].id.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 16320
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_12  FILLER_28_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 17408
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_28_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 17408
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_56
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 17408
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_28_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 17408
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_28_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 17408
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_4  FILLER_28_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 17408
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_123
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 17408
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[6\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5244 0 1 17408
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_28_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 1 17408
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_28_58
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6440 0 1 17408
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[11\].id.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6808 0 1 17408
 box -38 -48 682 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[6\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5796 0 1 17408
 box -38 -48 682 592
 use sky130_fd_sc_hd__decap_4  FILLER_28_69
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7452 0 1 17408
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_28_73
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7820 0 1 17408
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_28_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 17408
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_57
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 17408
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[6\].id.delaybuf1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7912 0 1 17408
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_29_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 18496
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_29_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 18496
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_58
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 18496
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_29_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 18496
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_8  FILLER_29_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 18496
 box -38 -48 774 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[11\].id.delayenb0_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5888 0 -1 18496
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_3  FILLER_29_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 -1 18496
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_29_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 18496
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_124
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 18496
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[11\].id.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 18496
 box -38 -48 1694 592
 use sky130_fd_sc_hd__decap_6  FILLER_29_75
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8004 0 -1 18496
 box -38 -48 590 592
 use sky130_fd_sc_hd__decap_3  PHY_59
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 18496
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_30_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 18496
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_30_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 18496
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_60
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 18496
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_30_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 18496
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_30_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 18496
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_30_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 18496
 box -38 -48 1142 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_125
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 18496
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[11\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6808 0 1 18496
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_6  FILLER_30_53
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5980 0 1 18496
 box -38 -48 590 592
 use sky130_fd_sc_hd__fill_1  FILLER_30_59
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6532 0 1 18496
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_30_62
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6808 0 1 18496
 box -38 -48 406 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[11\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8004 0 1 18496
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_30_69
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7452 0 1 18496
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_6  FILLER_30_75
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8004 0 1 18496
 box -38 -48 590 592
 use sky130_fd_sc_hd__decap_3  PHY_61
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 18496
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[11\].id.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7176 0 1 18496
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_31_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 19584
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_31_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 19584
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_62
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 19584
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_31_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 19584
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_31_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 19584
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_4  FILLER_31_51
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5796 0 -1 19584
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_31_55
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 -1 19584
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_31_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 19584
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_126
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 19584
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[11\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6716 0 -1 19584
 box -38 -48 682 592
 use sky130_fd_sc_hd__decap_4  FILLER_31_68
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7360 0 -1 19584
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_31_72
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7728 0 -1 19584
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_31_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 19584
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_63
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 19584
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[7\].id.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7820 0 -1 19584
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_12  FILLER_32_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 19584
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_32_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 19584
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_64
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 19584
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_32_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 19584
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_32_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 19584
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_6  FILLER_32_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 19584
 box -38 -48 590 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_127
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 19584
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[11\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6164 0 1 19584
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[7\].id.delayenb0_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 1 19584
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_32_49
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5612 0 1 19584
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_32_55
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 1 19584
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[11\].id.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6532 0 1 19584
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_4  FILLER_32_70
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7544 0 1 19584
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_32_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 19584
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_65
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 19584
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[11\].id.delaybuf1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7912 0 1 19584
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_33_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 20672
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_33_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 20672
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_34_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 20672
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_34_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 20672
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_66
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 20672
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_68
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 20672
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[7\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 4784 0 1 20672
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[7\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5244 0 -1 20672
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_12  FILLER_33_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 20672
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_4  FILLER_33_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 20672
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_34_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 20672
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_8  FILLER_34_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 20672
 box -38 -48 774 592
 use sky130_fd_sc_hd__fill_1  FILLER_34_37
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4508 0 1 20672
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_34_40
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4784 0 1 20672
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_129
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 20672
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[7\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5152 0 1 20672
 box -38 -48 682 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[7\].id.delaybuf1
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5612 0 -1 20672
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_34_51
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5796 0 1 20672
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_33_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 20672
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_33_45
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5244 0 -1 20672
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[7\].id.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6808 0 1 20672
 box -38 -48 682 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_128
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 20672
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_34_62
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6808 0 1 20672
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_2  FILLER_33_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 20672
 box -38 -48 222 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[7\].id.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 -1 20672
 box -38 -48 1694 592
 use sky130_fd_sc_hd__decap_4  FILLER_33_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 20672
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_34_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 20672
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_67
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 20672
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_69
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 20672
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[7\].id.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 20672
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_12  FILLER_35_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 21760
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_35_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 21760
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_70
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 21760
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[7\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5244 0 -1 21760
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_12  FILLER_35_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 21760
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_4  FILLER_35_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 21760
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_35_45
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5244 0 -1 21760
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_35_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 21760
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_35_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 21760
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_35_61
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6716 0 -1 21760
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_130
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 21760
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[10\].id.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7452 0 -1 21760
 box -38 -48 682 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[7\].id.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5612 0 -1 21760
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_35_69
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7452 0 -1 21760
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_35_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 21760
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_71
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 21760
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[11\].id.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7820 0 -1 21760
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_12  FILLER_36_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 21760
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_36_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 21760
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_72
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 21760
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_36_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 21760
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_36_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 21760
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_4  FILLER_36_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 21760
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_131
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 21760
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[10\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5980 0 1 21760
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[10\].id.delayenb0_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5428 0 1 21760
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_36_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 1 21760
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_36_53
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5980 0 1 21760
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[10\].id.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 1 21760
 box -38 -48 1694 592
 use sky130_fd_sc_hd__decap_6  FILLER_36_75
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8004 0 1 21760
 box -38 -48 590 592
 use sky130_fd_sc_hd__decap_3  PHY_73
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 21760
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_37_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 22848
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_37_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 22848
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_74
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 22848
 box -38 -48 314 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[10\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5244 0 -1 22848
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_12  FILLER_37_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 22848
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_4  FILLER_37_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 22848
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_37_45
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5244 0 -1 22848
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_37_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 22848
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_37_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 22848
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_37_61
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6716 0 -1 22848
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_132
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 22848
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[10\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7452 0 -1 22848
 box -38 -48 682 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[10\].id.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5888 0 -1 22848
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_37_69
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7452 0 -1 22848
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_37_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 22848
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_75
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 22848
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[10\].id.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 -1 22848
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_12  FILLER_38_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 22848
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_38_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 22848
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_76
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 22848
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_38_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 22848
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_38_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 22848
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_6  FILLER_38_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 22848
 box -38 -48 590 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_133
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 22848
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[10\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5520 0 1 22848
 box -38 -48 222 592
 use sky130_fd_sc_hd__fill_1  FILLER_38_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 1 22848
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_38_50
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5704 0 1 22848
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_38_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 1 22848
 box -38 -48 406 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[10\].id.delaybuf1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6348 0 1 22848
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[10\].id.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7728 0 1 22848
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_8  FILLER_38_72
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7728 0 1 22848
 box -38 -48 774 592
 use sky130_fd_sc_hd__fill_1  FILLER_38_80
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8464 0 1 22848
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_3  PHY_77
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 22848
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_39_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 23936
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_39_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 23936
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_40_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 23936
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_40_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 23936
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_78
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 23936
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_80
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 23936
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_39_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 23936
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_8  FILLER_39_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 23936
 box -38 -48 774 592
 use sky130_fd_sc_hd__fill_1  FILLER_40_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 23936
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_40_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 23936
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_40_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 23936
 box -38 -48 1142 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_135
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 23936
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_3  FILLER_39_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 -1 23936
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_39_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 23936
 box -38 -48 406 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[8\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5980 0 1 23936
 box -38 -48 222 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[8\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5888 0 -1 23936
 box -38 -48 222 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_134
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 23936
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_40_55
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 1 23936
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_39_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 23936
 box -38 -48 406 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[8\].id.delaybuf1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6808 0 1 23936
 box -38 -48 314 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[8\].id.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7176 0 -1 23936
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_40_62
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6808 0 1 23936
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_39_61
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6716 0 -1 23936
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_39_66
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7176 0 -1 23936
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_39_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 23936
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_40_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 23936
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_79
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 23936
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_3  PHY_81
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 23936
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[8\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 -1 23936
 box -38 -48 682 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[8\].id.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 23936
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_12  FILLER_41_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 25024
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_41_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 25024
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_82
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 25024
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_41_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 25024
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_41_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 25024
 box -38 -48 1142 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[8\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 25024
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_41_51
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5796 0 -1 25024
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_41_55
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 -1 25024
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_41_59
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6532 0 -1 25024
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_136
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 25024
 box -38 -48 130 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[8\].id.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7176 0 -1 25024
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_41_66
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7176 0 -1 25024
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_41_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 25024
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_83
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 25024
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[8\].id.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 -1 25024
 box -38 -48 682 592
 use sky130_fd_sc_hd__decap_12  FILLER_42_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 25024
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_42_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 25024
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_84
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 25024
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_42_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 25024
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_42_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 25024
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_42_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 25024
 box -38 -48 1142 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_137
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 25024
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[8\].id.delayenb0_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6164 0 1 25024
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_42_55
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 1 25024
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[8\].id.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 25024
 box -38 -48 1694 592
 use sky130_fd_sc_hd__decap_4  FILLER_42_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 25024
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_85
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 25024
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_43_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 26112
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_43_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 26112
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_86
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 26112
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_43_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 26112
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_8  FILLER_43_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 26112
 box -38 -48 774 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[9\].id.delayenb1_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5888 0 -1 26112
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_3  FILLER_43_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 -1 26112
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_43_52
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5888 0 -1 26112
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_43_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 -1 26112
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_43_61
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6716 0 -1 26112
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_138
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 26112
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvn_4  ring.dstage\[9\].id.delayenb1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7820 0 -1 26112
 box -38 -48 1050 592
 use sky130_fd_sc_hd__decap_8  FILLER_43_73
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7820 0 -1 26112
 box -38 -48 774 592
 use sky130_fd_sc_hd__decap_3  PHY_87
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 26112
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_44_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 26112
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_44_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 26112
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_88
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 26112
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_44_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 26112
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_44_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 26112
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  FILLER_44_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 26112
 box -38 -48 314 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_139
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 26112
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_44_47
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5428 0 1 26112
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_44_55
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 1 26112
 box -38 -48 406 592
 use sky130_fd_sc_hd__clkbuf_2  ring.dstage\[9\].id.delaybuf0
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5796 0 1 26112
 box -38 -48 406 592
 use sky130_fd_sc_hd__einvn_8  ring.dstage\[9\].id.delayenb0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 26112
 box -38 -48 1694 592
 use sky130_fd_sc_hd__clkinv_1  ring.dstage\[9\].id.delayint0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 5428 0 1 26112
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_4  FILLER_44_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 26112
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_89
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 26112
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_45_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 -1 27200
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_45_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 -1 27200
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_90
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 -1 27200
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_45_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 -1 27200
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_45_39
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4692 0 -1 27200
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_4  FILLER_45_51
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5796 0 -1 27200
 box -38 -48 406 592
 use sky130_fd_sc_hd__fill_1  FILLER_45_55
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6164 0 -1 27200
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_45_60
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6624 0 -1 27200
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_140
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 -1 27200
 box -38 -48 130 592
 use sky130_fd_sc_hd__clkbuf_1  ring.dstage\[9\].id.delaybuf1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6624 0 -1 27200
 box -38 -48 314 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[9\].id.delayen0
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7636 0 -1 27200
 box -38 -48 682 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[9\].id.delayen0_TE
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8004 0 -1 27200
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_45_71
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7636 0 -1 27200
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_45_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 -1 27200
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_91
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 -1 27200
 box -38 -48 314 592
 use sky130_fd_sc_hd__decap_12  FILLER_46_15
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 2484 0 1 27200
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_46_3
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1380 0 1 27200
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_3  PHY_92
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 1104 0 1 27200
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_46_27
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3588 0 1 27200
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_12  FILLER_46_29
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3772 0 1 27200
 box -38 -48 1142 592
 use sky130_fd_sc_hd__decap_12  FILLER_46_41
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 4876 0 1 27200
 box -38 -48 1142 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_141
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 3680 0 1 27200
 box -38 -48 130 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[9\].id.delayenb0_TE_B
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 6624 0 1 27200
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_3  FILLER_46_53
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 5980 0 1 27200
 box -38 -48 314 592
 use sky130_fd_sc_hd__fill_1  FILLER_46_57
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6348 0 1 27200
 box -38 -48 130 592
 use sky130_fd_sc_hd__decap_4  FILLER_46_60
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6624 0 1 27200
 box -38 -48 406 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  TAP_142
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 6256 0 1 27200
 box -38 -48 130 592
 use sky130_fd_sc_hd__einvp_2  ring.dstage\[9\].id.delayen1
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 7636 0 1 27200
 box -38 -48 682 592
 use sky130_fd_sc_hd__diode_2  ANTENNA_ring.dstage\[9\].id.delayen1_TE
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8188 0 1 27200
 box -38 -48 222 592
 use sky130_fd_sc_hd__decap_4  FILLER_46_71
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 7636 0 1 27200
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_4  FILLER_46_77
-timestamp 1635107566
+timestamp 1635306529
 transform 1 0 8188 0 1 27200
 box -38 -48 406 592
 use sky130_fd_sc_hd__decap_3  PHY_93
-timestamp 1635107566
+timestamp 1635306529
 transform -1 0 8832 0 1 27200
 box -38 -48 314 592
 << labels >>
