@@ -67,14 +67,20 @@ module digitalcore_macro (
   // Peripherals.
   parameter GPIO0_ADDR_MASK   = 32'hffff_0000;
   parameter GPIO0_BASE_ADDR   = 32'h3080_0000;
-  parameter PWM0_ADDR_MASK    = 32'hffff_0000;
+  parameter PWM0_ADDR_MASK    = 32'hffff_ff00;
   parameter PWM0_BASE_ADDR    = 32'h3081_0000;
+  parameter PWM1_ADDR_MASK    = 32'hffff_ff00;
+  parameter PWM1_BASE_ADDR    = 32'h3081_0100;
+  parameter PWM2_ADDR_MASK    = 32'hffff_ff00;
+  parameter PWM2_BASE_ADDR    = 32'h3081_0200;
+  parameter PWM3_ADDR_MASK    = 32'hffff_ff00;
+  parameter PWM3_BASE_ADDR    = 32'h3081_0300;
   parameter UART0_ADDR_MASK   = 32'hffff_0000;
   parameter UART0_BASE_ADDR   = 32'h3082_0000;
-  parameter RING0_ADDR_MASK   = 32'hffff_0000;
+  parameter RING0_ADDR_MASK   = 32'hffff_ff00;
   parameter RING0_BASE_ADDR   = 32'h3083_0000;
-  parameter RING1_ADDR_MASK   = 32'hffff_0000;
-  parameter RING1_BASE_ADDR   = 32'h3084_0000;
+  parameter RING1_ADDR_MASK   = 32'hffff_ff00;
+  parameter RING1_BASE_ADDR   = 32'h3083_0100;
 
   // Filter addresses from Caravel since we want to be absolutely sure it is
   // selecting us before letting it access the arbiter.  This is mostly needed
@@ -83,7 +89,7 @@ module digitalcore_macro (
   wire wbs_addr_sel;
   assign wbs_addr_sel = (wbs_adr_i & DTOP_MASK) == DTOP_ADDR;
 
-  wb_mux_4 interconnect (
+  wb_mux_8 interconnect (
     .wbm_adr_i(wbs_adr_i),
     .wbm_dat_i(wbs_dat_i),
     .wbm_dat_o(wbs_dat_o),
@@ -108,44 +114,96 @@ module digitalcore_macro (
     .wbs0_addr(GPIO0_BASE_ADDR),
     .wbs0_addr_msk(GPIO0_ADDR_MASK),
 
-    .wbs1_adr_o(uart_adr_i),
-    .wbs1_dat_i(uart_dat_o),
-    .wbs1_dat_o(uart_dat_i),
-    .wbs1_we_o(uart_we_i),
-    .wbs1_sel_o(uart_sel_i),
-    .wbs1_stb_o(uart_stb_i),
-    .wbs1_ack_i(uart_ack_o),
+    .wbs1_adr_o(pwm_adr_i[0]),
+    .wbs1_dat_i(pwm_dat_o[0]),
+    .wbs1_dat_o(pwm_dat_i[0]),
+    .wbs1_we_o(pwm_we_i[0]),
+    .wbs1_sel_o(pwm_sel_i[0]),
+    .wbs1_stb_o(pwm_stb_i[0]),
+    .wbs1_ack_i(pwm_ack_o[0]),
     .wbs1_err_i(1'b0),
     .wbs1_rty_i(1'b0),
-    .wbs1_cyc_o(uart_cyc_i),
-    .wbs1_addr(UART0_BASE_ADDR),
-    .wbs1_addr_msk(UART0_ADDR_MASK),
+    .wbs1_cyc_o(pwm_cyc_i[0]),
+    .wbs1_addr(PWM0_BASE_ADDR),
+    .wbs1_addr_msk(PWM0_ADDR_MASK),
 
-    .wbs2_adr_o(ring0_adr_i),
-    .wbs2_dat_i(ring0_dat_o),
-    .wbs2_dat_o(ring0_dat_i),
-    .wbs2_we_o(ring0_we_i),
-    .wbs2_sel_o(ring0_sel_i),
-    .wbs2_stb_o(ring0_stb_i),
-    .wbs2_ack_i(ring0_ack_o),
+    .wbs2_adr_o(pwm_adr_i[1]),
+    .wbs2_dat_i(pwm_dat_o[1]),
+    .wbs2_dat_o(pwm_dat_i[1]),
+    .wbs2_we_o(pwm_we_i[1]),
+    .wbs2_sel_o(pwm_sel_i[1]),
+    .wbs2_stb_o(pwm_stb_i[1]),
+    .wbs2_ack_i(pwm_ack_o[1]),
     .wbs2_err_i(1'b0),
     .wbs2_rty_i(1'b0),
-    .wbs2_cyc_o(ring0_cyc_i),
-    .wbs2_addr(RING0_BASE_ADDR),
-    .wbs2_addr_msk(RING0_ADDR_MASK),
+    .wbs2_cyc_o(pwm_cyc_i[1]),
+    .wbs2_addr(PWM1_BASE_ADDR),
+    .wbs2_addr_msk(PWM1_ADDR_MASK),
 
-    .wbs3_adr_o(ring1_adr_i),
-    .wbs3_dat_i(ring1_dat_o),
-    .wbs3_dat_o(ring1_dat_i),
-    .wbs3_we_o(ring1_we_i),
-    .wbs3_sel_o(ring1_sel_i),
-    .wbs3_stb_o(ring1_stb_i),
-    .wbs3_ack_i(ring1_ack_o),
+    .wbs3_adr_o(pwm_adr_i[2]),
+    .wbs3_dat_i(pwm_dat_o[2]),
+    .wbs3_dat_o(pwm_dat_i[2]),
+    .wbs3_we_o(pwm_we_i[2]),
+    .wbs3_sel_o(pwm_sel_i[2]),
+    .wbs3_stb_o(pwm_stb_i[2]),
+    .wbs3_ack_i(pwm_ack_o[2]),
     .wbs3_err_i(1'b0),
     .wbs3_rty_i(1'b0),
-    .wbs3_cyc_o(ring1_cyc_i),
-    .wbs3_addr(RING1_BASE_ADDR),
-    .wbs3_addr_msk(RING1_ADDR_MASK)
+    .wbs3_cyc_o(pwm_cyc_i[2]),
+    .wbs3_addr(PWM2_BASE_ADDR),
+    .wbs3_addr_msk(PWM2_ADDR_MASK),
+
+    .wbs4_adr_o(pwm_adr_i[3]),
+    .wbs4_dat_i(pwm_dat_o[3]),
+    .wbs4_dat_o(pwm_dat_i[3]),
+    .wbs4_we_o(pwm_we_i[3]),
+    .wbs4_sel_o(pwm_sel_i[3]),
+    .wbs4_stb_o(pwm_stb_i[3]),
+    .wbs4_ack_i(pwm_ack_o[3]),
+    .wbs4_err_i(1'b0),
+    .wbs4_rty_i(1'b0),
+    .wbs4_cyc_o(pwm_cyc_i[3]),
+    .wbs4_addr(PWM3_BASE_ADDR),
+    .wbs4_addr_msk(PWM3_ADDR_MASK),
+
+    .wbs5_adr_o(uart_adr_i),
+    .wbs5_dat_i(uart_dat_o),
+    .wbs5_dat_o(uart_dat_i),
+    .wbs5_we_o(uart_we_i),
+    .wbs5_sel_o(uart_sel_i),
+    .wbs5_stb_o(uart_stb_i),
+    .wbs5_ack_i(uart_ack_o),
+    .wbs5_err_i(1'b0),
+    .wbs5_rty_i(1'b0),
+    .wbs5_cyc_o(uart_cyc_i),
+    .wbs5_addr(UART0_BASE_ADDR),
+    .wbs5_addr_msk(UART0_ADDR_MASK),
+
+    .wbs6_adr_o(ring0_adr_i),
+    .wbs6_dat_i(ring0_dat_o),
+    .wbs6_dat_o(ring0_dat_i),
+    .wbs6_we_o(ring0_we_i),
+    .wbs6_sel_o(ring0_sel_i),
+    .wbs6_stb_o(ring0_stb_i),
+    .wbs6_ack_i(ring0_ack_o),
+    .wbs6_err_i(1'b0),
+    .wbs6_rty_i(1'b0),
+    .wbs6_cyc_o(ring0_cyc_i),
+    .wbs6_addr(RING0_BASE_ADDR),
+    .wbs6_addr_msk(RING0_ADDR_MASK),
+
+    .wbs7_adr_o(ring1_adr_i),
+    .wbs7_dat_i(ring1_dat_o),
+    .wbs7_dat_o(ring1_dat_i),
+    .wbs7_we_o(ring1_we_i),
+    .wbs7_sel_o(ring1_sel_i),
+    .wbs7_stb_o(ring1_stb_i),
+    .wbs7_ack_i(ring1_ack_o),
+    .wbs7_err_i(1'b0),
+    .wbs7_rty_i(1'b0),
+    .wbs7_cyc_o(ring1_cyc_i),
+    .wbs7_addr(RING1_BASE_ADDR),
+    .wbs7_addr_msk(RING1_ADDR_MASK)
   );
 
   // GPIO signals.
@@ -180,6 +238,40 @@ module digitalcore_macro (
     .gpio_out(gpio_out),
     .gpio_oeb(gpio_oeb)
   );
+
+  // PWM controllers.
+  wire [31:0] pwm_adr_i[4];
+  wire [31:0] pwm_dat_i[4];
+  wire [3:0] pwm_sel_i[4];
+  wire pwm_we_i[4];
+  wire pwm_cyc_i[4];
+  wire pwm_stb_i[4];
+  wire pwm_ack_o[4];
+  wire [31:0] pwm_dat_o[4];
+  
+  wire pwm_out[4];
+
+  genvar i;
+  generate
+    for (i = 0; i < 4; i = i + 1) begin : pwms
+      pwm_wb pwm (
+        .wb_clk_i(wb_clk_i),
+        .wb_rst_i(wb_rst_i),
+
+        .wb_stb_i(pwm_stb_i[i]),
+        .wb_cyc_i(pwm_cyc_i[i]),
+        .wb_we_i(pwm_we_i[i]),
+        .wb_sel_i(pwm_sel_i[i]),
+        .wb_dat_i(pwm_dat_i[i]),
+        .wb_adr_i(pwm_adr_i[i]),
+
+        .wb_ack_o(pwm_ack_o[i]),
+        .wb_dat_o(pwm_dat_o[i]),
+
+        .pwm_out(pwm_out[i])
+      );
+    end
+  endgenerate
 
   // UART signals.
   wire [31:0] uart_adr_i;
@@ -301,18 +393,32 @@ module digitalcore_macro (
   assign io_out[5:0] = 6'b0;
   assign io_out[37:6] = gpio_out |
     {
-      /*io37=*/uart_tx & uart_enabled,
-      4'b0,
-      /*io32=*/ring0_test_out,
-      /*io31=*/ring1_test_out,
-      25'b0
+      /*31 - io37=*/uart_tx & uart_enabled,
+      /*30 - io36=*/1'b0,
+      /*29 - io35=*/1'b0,
+      /*28 - io34=*/1'b0,
+      /*27 - io33=*/1'b0,
+      /*26 - io32=*/ring0_test_out,
+      /*25 - io31=*/ring1_test_out,
+      /*24 - io30=*/1'b0,
+      /*23 - io29=*/pwm_out[0],
+      /*22 - io28=*/1'b0,
+      /*21 - io27=*/pwm_out[1],
+      /*20 - io26=*/1'b0,
+      /*19 - io25=*/pwm_out[2],
+      /*18 - io24=*/1'b0,
+      /*17 - io23=*/pwm_out[3],
+      17'b0
     };
 
   assign io_oeb[5:0] = 6'b0;
   assign io_oeb[37:6] = gpio_oeb &
     {
       /*io37=*/~uart_enabled,
-      {4{1'b1}},
+      /*io36=*/1'b1,
+      /*io35=*/1'b1,
+      /*io34=*/1'b1,
+      /*io33=*/1'b1,
       /*io32=*/~ring0_test_en,
       /*io31=*/~ring1_test_en,
       {25{1'b1}}
