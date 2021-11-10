@@ -20,9 +20,10 @@ set ::env(DESIGN_NAME) digitalcore_macro
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
 	$script_dir/../../ip/randsack/rtl/digitalcore_macro.v \
+	$script_dir/../../ip/randsack/rtl/pwm_wb.v \
 	$script_dir/../../ip/third_party/picorv32_wb/gpio32_wb.v \
 	$script_dir/../../ip/third_party/picorv32_wb/simpleuart_div16_wb.v \
-	$script_dir/../../ip/third_party/verilog-wishbone/rtl/wb_mux_4.v \
+	$script_dir/../../ip/third_party/verilog-wishbone/rtl/wb_mux_8.v \
 	$script_dir/../../ip/randsack/rtl/ring_control.v"
 
 set ::env(DESIGN_IS_CORE) 0
@@ -35,13 +36,24 @@ set ::env(CLOCK_PORT) "wb_clk_i ring0_clk ring1_clk"
 set ::env(CLOCK_PERIOD) "10"
 
 # Various options to tweak if there are slew / hold issues.
+set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) 1
+set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 1
+set ::env(PL_RESIZER_SETUP_SLACK_MARGIN) 0.1
+set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.2
+set ::env(GLB_RESIZER_SETUP_SLACK_MARGIN) 0.1
+set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) 0.2
+set ::env(GLB_RESIZER_HOLD_MAX_BUFFER_PERCENT) 80
+set ::env(PL_RESIZER_HOLD_MAX_BUFFER_PERCENT) 80
+set ::env(GLB_RESIZER_SETUP_MAX_BUFFER_PERCENT) 80
+set ::env(PL_RESIZER_SETUP_MAX_BUFFER_PERCENT) 80
 # set ::env(PL_RESIZER_ALLOW_SETUP_VIOS) 1
+# set ::env(GLB_RESIZER_ALLOW_SETUP_VIOS) 1
 # set ::env(SYNTH_MAX_FANOUT) 4
 # set ::env(CLOCK_BUFFER_FANOUT) 12
 # set ::env(CTS_CLK_BUFFER_LIST) "sky130_fd_sc_hd__clkbuf_4 sky130_fd_sc_hd__clkbuf_8"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 500 500"
+set ::env(DIE_AREA) "0 0 500 1000"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 

@@ -56,6 +56,9 @@ module pwm_wb #(
   reg [CNT_BITS-1:0] cntmax_reg;
   reg [CNT_BITS-1:0] cmp_reg;
 
+  // Captured regs.
+  reg [CNT_BITS-1:0] cmp_captured;
+
   // Counters.
   reg [DIV_BITS-1:0] div_cnt;
   reg [CNT_BITS-1:0] cnt_cnt;
@@ -88,14 +91,17 @@ module pwm_wb #(
   end
 
   // DIV counter.
-  wire div_match = div_cnt == div_reg;
+  reg div_match;
   always @(posedge clk or negedge resetb) begin
     if (!resetb) begin
       div_cnt <= {DIV_BITS{1'b0}};
+      div_match <= 1'b0;
     end else begin
-      if (div_match) begin
+      if (div_cnt == div_reg) begin
+        div_match <= 1'b1;
         div_cnt <= {DIV_BITS{1'b0}};
       end else begin
+        div_match <= 1'b0;
         div_cnt <= div_cnt + 1'b1;
       end
     end
@@ -115,16 +121,23 @@ module pwm_wb #(
     end
   end
 
+  // Capture new cmp value at end of cycle.
+  always @(posedge clk or negedge resetb) begin
+    if (!resetb) begin
+      cmp_captured <= {CNT_BITS{1'b0}};
+    end else begin
+      if (cnt_cnt == cntmax_reg) begin
+        cmp_captured <= cmp_reg;
+      end
+    end
+  end
+
   // Compare.
   always @(posedge clk or negedge resetb) begin
     if (!resetb) begin
       pwm_out <= 1'b0;
     end else begin
-      if (cnt_cnt < cmp_reg) begin
-        pwm_out <= 1'b1;  
-      end else begin
-        pwm_out <= 1'b0;
-      end
+      pwm_out <= cnt_cnt < cmp_captured;
     end
   end
 

@@ -10,6 +10,7 @@ Randsack is a test chip for trying out random number generators and PUFs.
 
 - `digitalcore_macro` - Digital top sea of gates containing control logic and digital peripherals.
     - `gpio0` - Wishbone 32-bit GPIO peripheral
+    - `pwm[0-3]` - Wishbone PWM peripherals with 16-bit prescaler and 16-bit counter/compare
     - `uart0` - Wishbone UART peripheral
     - `ring0` - Ring oscillator controller for collapsing ring.
     - `ring1` - Ring oscillator controller for free running ring oscillator.
