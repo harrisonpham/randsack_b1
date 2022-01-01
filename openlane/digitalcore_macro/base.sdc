@@ -18,13 +18,13 @@
 set ::env(WB_CLOCK_PERIOD)    "25"
 set ::env(WB_CLOCK_PORT)      "wb_clk_i"
 
-set ::env(RING0_CLOCK_PERIOD) "10"
+set ::env(RING0_CLOCK_PERIOD) "5"
 set ::env(RING0_CLOCK_PORT)   "ring0_clk"
 
-set ::env(RING1_CLOCK_PERIOD) "10"
+set ::env(RING1_CLOCK_PERIOD) "5"
 set ::env(RING1_CLOCK_PORT)   "ring1_clk"
 
-set ::env(RING2_CLOCK_PERIOD) "10"
+set ::env(RING2_CLOCK_PERIOD) "5"
 set ::env(RING2_CLOCK_PORT)   "ring2_clk"
 set ::env(RING3_CLOCK_PORT)   "ring3_clk"
 set ::env(RING4_CLOCK_PORT)   "ring4_clk"
