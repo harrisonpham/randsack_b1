@@ -9,8 +9,10 @@ export GCC_PATH=/opt/riscv32imc/bin/
 export PDK_PATH=/home/harrison/workspace/sky130/sky130A/
 
 # Precheck
-export PRECHECK_ROOT=/home/harrison/workspace/precheck/
+export PRECHECK_ROOT=/home/harrison/workspace/mpw4/precheck/
 
-# Hack for mpw-3
-export OPENLANE_TAG=master
+export OPENLANE_TAG=mpw-3a
+
+export CARAVEL_LITE=1
+export CARAVEL_BRANCH=mpw-3a
 

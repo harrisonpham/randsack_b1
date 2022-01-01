@@ -65,22 +65,22 @@ module digitalcore_macro (
   parameter DTOP_ADDR    = 32'h3000_0000;
 
   // Peripherals.
-  parameter GPIO0_ADDR_MASK   = 32'hffff_0000;
-  parameter GPIO0_BASE_ADDR   = 32'h3080_0000;
+  parameter GPIO0_ADDR_MASK   = 32'hffff_ff00;
+  parameter GPIO0_BASE_ADDR   = 32'h3000_0000;
   parameter PWM0_ADDR_MASK    = 32'hffff_ff00;
-  parameter PWM0_BASE_ADDR    = 32'h3081_0000;
+  parameter PWM0_BASE_ADDR    = 32'h3000_1000;
   parameter PWM1_ADDR_MASK    = 32'hffff_ff00;
-  parameter PWM1_BASE_ADDR    = 32'h3081_0100;
+  parameter PWM1_BASE_ADDR    = 32'h3000_1100;
   parameter PWM2_ADDR_MASK    = 32'hffff_ff00;
-  parameter PWM2_BASE_ADDR    = 32'h3081_0200;
+  parameter PWM2_BASE_ADDR    = 32'h3000_1200;
   parameter PWM3_ADDR_MASK    = 32'hffff_ff00;
-  parameter PWM3_BASE_ADDR    = 32'h3081_0300;
-  parameter UART0_ADDR_MASK   = 32'hffff_0000;
-  parameter UART0_BASE_ADDR   = 32'h3082_0000;
+  parameter PWM3_BASE_ADDR    = 32'h3000_1300;
+  parameter UART0_ADDR_MASK   = 32'hffff_ff00;
+  parameter UART0_BASE_ADDR   = 32'h3000_2000;
   parameter RING0_ADDR_MASK   = 32'hffff_ff00;
-  parameter RING0_BASE_ADDR   = 32'h3083_0000;
+  parameter RING0_BASE_ADDR   = 32'h3000_3000;
   parameter RING1_ADDR_MASK   = 32'hffff_ff00;
-  parameter RING1_BASE_ADDR   = 32'h3083_0100;
+  parameter RING1_BASE_ADDR   = 32'h3000_3100;
 
   // Filter addresses from Caravel since we want to be absolutely sure it is
   // selecting us before letting it access the arbiter.  This is mostly needed
@@ -248,7 +248,7 @@ module digitalcore_macro (
   wire pwm_stb_i[4];
   wire pwm_ack_o[4];
   wire [31:0] pwm_dat_o[4];
-  
+
   wire pwm_out[4];
 
   genvar i;
