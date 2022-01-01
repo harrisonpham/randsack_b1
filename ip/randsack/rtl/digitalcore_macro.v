@@ -57,7 +57,21 @@ module digitalcore_macro (
   input ring1_clk,
   output ring1_start,
   output [25:0] ring1_trim_a,
-  output [2:0] ring1_clkmux
+  output [2:0] ring1_clkmux,
+
+  // ring2-9
+  input  ring2_clk,
+  input  ring3_clk,
+  input  ring4_clk,
+  input  ring5_clk,
+  input  ring6_clk,
+  input  ring7_clk,
+  input  ring8_clk,
+  input  ring9_clk,
+  output ring2_start,
+  output [27:0] ring2_trim_a,
+  output [27:0] ring2_trim_b,
+  output [2:0] ring2_clkmux
 );
 
   // Filter wishbone accesses from Caravel.
@@ -81,6 +95,22 @@ module digitalcore_macro (
   parameter RING0_BASE_ADDR   = 32'h3000_3000;
   parameter RING1_ADDR_MASK   = 32'hffff_ff00;
   parameter RING1_BASE_ADDR   = 32'h3000_3100;
+  parameter RING2_ADDR_MASK   = 32'hffff_ff00;
+  parameter RING2_BASE_ADDR   = 32'h3000_3200;
+  parameter RING3_ADDR_MASK   = 32'hffff_ff00;
+  parameter RING3_BASE_ADDR   = 32'h3000_3300;
+  parameter RING4_ADDR_MASK   = 32'hffff_ff00;
+  parameter RING4_BASE_ADDR   = 32'h3000_3400;
+  parameter RING5_ADDR_MASK   = 32'hffff_ff00;
+  parameter RING5_BASE_ADDR   = 32'h3000_3500;
+  parameter RING6_ADDR_MASK   = 32'hffff_ff00;
+  parameter RING6_BASE_ADDR   = 32'h3000_3600;
+  parameter RING7_ADDR_MASK   = 32'hffff_ff00;
+  parameter RING7_BASE_ADDR   = 32'h3000_3700;
+  parameter RING8_ADDR_MASK   = 32'hffff_ff00;
+  parameter RING8_BASE_ADDR   = 32'h3000_3800;
+  parameter RING9_ADDR_MASK   = 32'hffff_ff00;
+  parameter RING9_BASE_ADDR   = 32'h3000_3900;
 
   // Filter addresses from Caravel since we want to be absolutely sure it is
   // selecting us before letting it access the arbiter.  This is mostly needed
@@ -89,7 +119,7 @@ module digitalcore_macro (
   wire wbs_addr_sel;
   assign wbs_addr_sel = (wbs_adr_i & DTOP_MASK) == DTOP_ADDR;
 
-  wb_mux_8 interconnect (
+  wb_mux_16 interconnect (
     .wbm_adr_i(wbs_adr_i),
     .wbm_dat_i(wbs_dat_i),
     .wbm_dat_o(wbs_dat_o),
@@ -203,7 +233,111 @@ module digitalcore_macro (
     .wbs7_rty_i(1'b0),
     .wbs7_cyc_o(ring1_cyc_i),
     .wbs7_addr(RING1_BASE_ADDR),
-    .wbs7_addr_msk(RING1_ADDR_MASK)
+    .wbs7_addr_msk(RING1_ADDR_MASK),
+
+    .wbs8_adr_o(ring2_adr_i[0]),
+    .wbs8_dat_i(ring2_dat_o[0]),
+    .wbs8_dat_o(ring2_dat_i[0]),
+    .wbs8_we_o(ring2_we_i[0]),
+    .wbs8_sel_o(ring2_sel_i[0]),
+    .wbs8_stb_o(ring2_stb_i[0]),
+    .wbs8_ack_i(ring2_ack_o[0]),
+    .wbs8_err_i(1'b0),
+    .wbs8_rty_i(1'b0),
+    .wbs8_cyc_o(ring2_cyc_i[0]),
+    .wbs8_addr(RING2_BASE_ADDR),
+    .wbs8_addr_msk(RING2_ADDR_MASK),
+
+    .wbs9_adr_o(ring2_adr_i[1]),
+    .wbs9_dat_i(ring2_dat_o[1]),
+    .wbs9_dat_o(ring2_dat_i[1]),
+    .wbs9_we_o(ring2_we_i[1]),
+    .wbs9_sel_o(ring2_sel_i[1]),
+    .wbs9_stb_o(ring2_stb_i[1]),
+    .wbs9_ack_i(ring2_ack_o[1]),
+    .wbs9_err_i(1'b0),
+    .wbs9_rty_i(1'b0),
+    .wbs9_cyc_o(ring2_cyc_i[1]),
+    .wbs9_addr(RING3_BASE_ADDR),
+    .wbs9_addr_msk(RING3_ADDR_MASK),
+
+    .wbs10_adr_o(ring2_adr_i[2]),
+    .wbs10_dat_i(ring2_dat_o[2]),
+    .wbs10_dat_o(ring2_dat_i[2]),
+    .wbs10_we_o(ring2_we_i[2]),
+    .wbs10_sel_o(ring2_sel_i[2]),
+    .wbs10_stb_o(ring2_stb_i[2]),
+    .wbs10_ack_i(ring2_ack_o[2]),
+    .wbs10_err_i(1'b0),
+    .wbs10_rty_i(1'b0),
+    .wbs10_cyc_o(ring2_cyc_i[2]),
+    .wbs10_addr(RING4_BASE_ADDR),
+    .wbs10_addr_msk(RING4_ADDR_MASK),
+
+    .wbs11_adr_o(ring2_adr_i[3]),
+    .wbs11_dat_i(ring2_dat_o[3]),
+    .wbs11_dat_o(ring2_dat_i[3]),
+    .wbs11_we_o(ring2_we_i[3]),
+    .wbs11_sel_o(ring2_sel_i[3]),
+    .wbs11_stb_o(ring2_stb_i[3]),
+    .wbs11_ack_i(ring2_ack_o[3]),
+    .wbs11_err_i(1'b0),
+    .wbs11_rty_i(1'b0),
+    .wbs11_cyc_o(ring2_cyc_i[3]),
+    .wbs11_addr(RING5_BASE_ADDR),
+    .wbs11_addr_msk(RING5_ADDR_MASK),
+
+    .wbs12_adr_o(ring2_adr_i[4]),
+    .wbs12_dat_i(ring2_dat_o[4]),
+    .wbs12_dat_o(ring2_dat_i[4]),
+    .wbs12_we_o(ring2_we_i[4]),
+    .wbs12_sel_o(ring2_sel_i[4]),
+    .wbs12_stb_o(ring2_stb_i[4]),
+    .wbs12_ack_i(ring2_ack_o[4]),
+    .wbs12_err_i(1'b0),
+    .wbs12_rty_i(1'b0),
+    .wbs12_cyc_o(ring2_cyc_i[4]),
+    .wbs12_addr(RING6_BASE_ADDR),
+    .wbs12_addr_msk(RING6_ADDR_MASK),
+
+    .wbs13_adr_o(ring2_adr_i[5]),
+    .wbs13_dat_i(ring2_dat_o[5]),
+    .wbs13_dat_o(ring2_dat_i[5]),
+    .wbs13_we_o(ring2_we_i[5]),
+    .wbs13_sel_o(ring2_sel_i[5]),
+    .wbs13_stb_o(ring2_stb_i[5]),
+    .wbs13_ack_i(ring2_ack_o[5]),
+    .wbs13_err_i(1'b0),
+    .wbs13_rty_i(1'b0),
+    .wbs13_cyc_o(ring2_cyc_i[5]),
+    .wbs13_addr(RING7_BASE_ADDR),
+    .wbs13_addr_msk(RING7_ADDR_MASK),
+
+    .wbs14_adr_o(ring2_adr_i[6]),
+    .wbs14_dat_i(ring2_dat_o[6]),
+    .wbs14_dat_o(ring2_dat_i[6]),
+    .wbs14_we_o(ring2_we_i[6]),
+    .wbs14_sel_o(ring2_sel_i[6]),
+    .wbs14_stb_o(ring2_stb_i[6]),
+    .wbs14_ack_i(ring2_ack_o[6]),
+    .wbs14_err_i(1'b0),
+    .wbs14_rty_i(1'b0),
+    .wbs14_cyc_o(ring2_cyc_i[6]),
+    .wbs14_addr(RING8_BASE_ADDR),
+    .wbs14_addr_msk(RING8_ADDR_MASK),
+
+    .wbs15_adr_o(ring2_adr_i[7]),
+    .wbs15_dat_i(ring2_dat_o[7]),
+    .wbs15_dat_o(ring2_dat_i[7]),
+    .wbs15_we_o(ring2_we_i[7]),
+    .wbs15_sel_o(ring2_sel_i[7]),
+    .wbs15_stb_o(ring2_stb_i[7]),
+    .wbs15_ack_i(ring2_ack_o[7]),
+    .wbs15_err_i(1'b0),
+    .wbs15_rty_i(1'b0),
+    .wbs15_cyc_o(ring2_cyc_i[7]),
+    .wbs15_addr(RING9_BASE_ADDR),
+    .wbs15_addr_msk(RING9_ADDR_MASK)
   );
 
   // GPIO signals.
@@ -385,6 +519,74 @@ module digitalcore_macro (
     .test_en(ring1_test_en),
     .test_out(ring1_test_out)
   );
+
+  // RING[2-9] signals.
+  wire [31:0] ring2_adr_i[8];
+  wire [31:0] ring2_dat_i[8];
+  wire [3:0] ring2_sel_i[8];
+  wire ring2_we_i[8];
+  wire ring2_cyc_i[8];
+  wire ring2_stb_i[8];
+  wire ring2_ack_o[8];
+  wire [31:0] ring2_dat_o[8];
+
+  wire [7:0] ring2_clk_bus;
+  assign ring2_clk_bus = {ring9_clk, ring8_clk, ring7_clk, ring6_clk,
+                          ring5_clk, ring4_clk, ring3_clk, ring2_clk};
+
+  // ring2 controls the start, trim, reset for ring2-9
+  ring_control ring2 (
+    .wb_clk_i(wb_clk_i),
+    .wb_rst_i(wb_rst_i),
+
+    .wb_stb_i(ring2_stb_i[0]),
+    .wb_cyc_i(ring2_cyc_i[0]),
+    .wb_we_i(ring2_we_i[0]),
+    .wb_sel_i(ring2_sel_i[0]),
+    .wb_dat_i(ring2_dat_i[0]),
+    .wb_adr_i(ring2_adr_i[0]),
+
+    .wb_ack_o(ring2_ack_o[0]),
+    .wb_dat_o(ring2_dat_o[0]),
+
+    .ring_clk(ring2_clk_bus[0]),
+    .ring_start(ring2_start),
+    .ring_trim_a(ring2_trim_a),
+    .ring_trim_b(ring2_trim_b),
+    .ring_clkmux(ring2_clkmux),
+
+    .test_en(),
+    .test_out()
+  );
+
+  genvar j;
+  generate
+    for (j = 1; j < 8; j = j + 1) begin : ring2s
+      ring_control ring2 (
+        .wb_clk_i(wb_clk_i),
+        .wb_rst_i(wb_rst_i),
+
+        .wb_stb_i(ring2_stb_i[j]),
+        .wb_cyc_i(ring2_cyc_i[j]),
+        .wb_we_i(ring2_we_i[j]),
+        .wb_sel_i(ring2_sel_i[j]),
+        .wb_dat_i(ring2_dat_i[j]),
+        .wb_adr_i(ring2_adr_i[j]),
+
+        .wb_ack_o(ring2_ack_o[j]),
+        .wb_dat_o(ring2_dat_o[j]),
+
+        .ring_clk(ring2_clk_bus[j]),
+        .ring_start(),
+        .ring_trim_a(),
+        .ring_trim_b(),
+        .ring_clkmux(),
+
+        .test_en(),
+        .test_out()
+      );
+    end
+  endgenerate
 
   // Connect up external ports.
   assign gpio_in = io_in[37:6];

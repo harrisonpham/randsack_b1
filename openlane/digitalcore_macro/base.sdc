@@ -24,6 +24,16 @@ set ::env(RING0_CLOCK_PORT)   "ring0_clk"
 set ::env(RING1_CLOCK_PERIOD) "10"
 set ::env(RING1_CLOCK_PORT)   "ring1_clk"
 
+set ::env(RING2_CLOCK_PERIOD) "10"
+set ::env(RING2_CLOCK_PORT)   "ring2_clk"
+set ::env(RING3_CLOCK_PORT)   "ring3_clk"
+set ::env(RING4_CLOCK_PORT)   "ring4_clk"
+set ::env(RING5_CLOCK_PORT)   "ring5_clk"
+set ::env(RING6_CLOCK_PORT)   "ring6_clk"
+set ::env(RING7_CLOCK_PORT)   "ring7_clk"
+set ::env(RING8_CLOCK_PORT)   "ring8_clk"
+set ::env(RING9_CLOCK_PORT)   "ring9_clk"
+
 if {[info exists ::env(WB_CLOCK_PORT)] && $::env(WB_CLOCK_PORT) != ""} {
     create_clock [get_ports $::env(WB_CLOCK_PORT)]  -name $::env(WB_CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
 } else {
@@ -59,9 +69,33 @@ set_load  $cap_load [all_outputs]
 # NOTE: These don't need any input/output delays since this design just uses it for clock counting.
 create_clock [get_ports $::env(RING0_CLOCK_PORT)] -name $::env(RING0_CLOCK_PORT) -period $::env(RING0_CLOCK_PERIOD)
 create_clock [get_ports $::env(RING1_CLOCK_PORT)] -name $::env(RING1_CLOCK_PORT) -period $::env(RING1_CLOCK_PERIOD)
+create_clock [get_ports $::env(RING2_CLOCK_PORT)] -name $::env(RING2_CLOCK_PORT) -period $::env(RING2_CLOCK_PERIOD)
+create_clock [get_ports $::env(RING3_CLOCK_PORT)] -name $::env(RING3_CLOCK_PORT) -period $::env(RING2_CLOCK_PERIOD)
+create_clock [get_ports $::env(RING4_CLOCK_PORT)] -name $::env(RING4_CLOCK_PORT) -period $::env(RING2_CLOCK_PERIOD)
+create_clock [get_ports $::env(RING5_CLOCK_PORT)] -name $::env(RING5_CLOCK_PORT) -period $::env(RING2_CLOCK_PERIOD)
+create_clock [get_ports $::env(RING6_CLOCK_PORT)] -name $::env(RING6_CLOCK_PORT) -period $::env(RING2_CLOCK_PERIOD)
+create_clock [get_ports $::env(RING7_CLOCK_PORT)] -name $::env(RING7_CLOCK_PORT) -period $::env(RING2_CLOCK_PERIOD)
+create_clock [get_ports $::env(RING8_CLOCK_PORT)] -name $::env(RING8_CLOCK_PORT) -period $::env(RING2_CLOCK_PERIOD)
+create_clock [get_ports $::env(RING9_CLOCK_PORT)] -name $::env(RING9_CLOCK_PORT) -period $::env(RING2_CLOCK_PERIOD)
 
 set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING0_CLOCK_PORT)]
 set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING1_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING2_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING3_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING4_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING5_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING6_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING7_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING8_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(WB_CLOCK_PORT)] -to [get_clocks $::env(RING9_CLOCK_PORT)]
 
 set_false_path -from [get_clocks $::env(RING0_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]
 set_false_path -from [get_clocks $::env(RING1_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(RING2_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(RING3_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(RING4_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(RING5_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(RING6_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(RING7_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(RING8_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]
+set_false_path -from [get_clocks $::env(RING9_CLOCK_PORT)] -to [get_clocks $::env(WB_CLOCK_PORT)]

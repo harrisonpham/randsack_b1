@@ -36,5 +36,5 @@
     `include "pwm_wb.v"
     `include "picorv32_wb/gpio32_wb.v"
     `include "picorv32_wb/simpleuart_div16_wb.v"
-    `include "verilog-wishbone/rtl/wb_mux_8.v"
+    `include "verilog-wishbone/rtl/wb_mux_16.v"
 `endif

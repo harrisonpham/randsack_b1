@@ -23,8 +23,13 @@ set ::env(VERILOG_FILES) "\
 	$script_dir/../../ip/randsack/rtl/pwm_wb.v \
 	$script_dir/../../ip/third_party/picorv32_wb/gpio32_wb.v \
 	$script_dir/../../ip/third_party/picorv32_wb/simpleuart_div16_wb.v \
-	$script_dir/../../ip/third_party/verilog-wishbone/rtl/wb_mux_8.v \
+	$script_dir/../../ip/third_party/verilog-wishbone/rtl/wb_mux_16.v \
 	$script_dir/../../ip/randsack/rtl/ring_control.v"
+
+# Skip DRC for testing.
+# set ::env(RUN_KLAYOUT_XOR) 0
+# set ::env(RUN_KLAYOUT_DRC) 0
+# set ::env(MAGIC_DRC_USE_GDS) 0
 
 set ::env(DESIGN_IS_CORE) 0
 
@@ -32,19 +37,21 @@ set ::env(SDC_FILE) "$script_dir/base.sdc"
 set ::env(BASE_SDC_FILE) "$script_dir/base.sdc"
 
 # NOTE: Make sure to add all clocks manually to base.sdc!
-set ::env(CLOCK_PORT) "wb_clk_i ring0_clk ring1_clk"
-set ::env(CLOCK_PERIOD) "15"
+set ::env(CLOCK_PORT) "wb_clk_i ring0_clk ring1_clk \
+                       ring2_clk ring3_clk ring4_clk ring5_clk \
+                       ring6_clk ring7_clk ring8_clk ring9_clk"
+set ::env(CLOCK_PERIOD) "25"
 
 # Various options to tweak if there are slew / hold issues.
 # set ::env(FP_CORE_UTIL) 15
 # set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) 1
 # set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 1
 # set ::env(PL_RESIZER_SETUP_SLACK_MARGIN) 0.1
-# set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.3
+set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.5
 # set ::env(GLB_RESIZER_SETUP_SLACK_MARGIN) 0.1
-# set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) 0.3
-# set ::env(GLB_RESIZER_HOLD_MAX_BUFFER_PERCENT) 90
-# set ::env(PL_RESIZER_HOLD_MAX_BUFFER_PERCENT) 90
+set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) 0.5
+set ::env(GLB_RESIZER_HOLD_MAX_BUFFER_PERCENT) 90
+set ::env(PL_RESIZER_HOLD_MAX_BUFFER_PERCENT) 90
 # set ::env(GLB_RESIZER_SETUP_MAX_BUFFER_PERCENT) 90
 # set ::env(PL_RESIZER_SETUP_MAX_BUFFER_PERCENT) 90
 # set ::env(PL_RESIZER_ALLOW_SETUP_VIOS) 1
@@ -59,7 +66,7 @@ set ::env(DIE_AREA) "0 0 500 1000"
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 # set ::env(PL_TIME_DRIVEN) 1
-set ::env(PL_TARGET_DENSITY) 0.5
+set ::env(PL_TARGET_DENSITY) 0.4
 
 # Maximum layer used for routing is metal 4.
 # This is because this macro will be inserted in a top level (user_project_wrapper)

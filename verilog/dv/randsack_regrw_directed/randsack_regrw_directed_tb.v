@@ -84,7 +84,7 @@ module randsack_regrw_directed_tb;
   end
 
   // Power-up sequence
-  initial begin 
+  initial begin
     power1 <= 1'b0;
     power2 <= 1'b0;
     power3 <= 1'b0;

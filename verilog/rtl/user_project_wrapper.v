@@ -93,6 +93,12 @@ module user_project_wrapper #(
   wire [25:0] ring1_trim_a;
   wire [2:0] ring1_clkmux;
 
+  wire [7:0] ring2_clk;
+  wire ring2_start;
+  wire [27:0] ring2_trim_a;
+  wire [27:0] ring2_trim_b;
+  wire [2:0] ring2_clkmux;
+
 digitalcore_macro digitalcore (
 `ifdef USE_POWER_PINS
   .vccd1(vccd1),  // User area 1 1.8V power
@@ -136,7 +142,21 @@ digitalcore_macro digitalcore (
   .ring1_clk(ring1_clk),
   .ring1_start(ring1_start),
   .ring1_trim_a(ring1_trim_a),
-  .ring1_clkmux(ring1_clkmux)
+  .ring1_clkmux(ring1_clkmux),
+
+  // ring2 (controls 2-9)
+  .ring2_clk(ring2_clk[0]),
+  .ring3_clk(ring2_clk[1]),
+  .ring4_clk(ring2_clk[2]),
+  .ring5_clk(ring2_clk[3]),
+  .ring6_clk(ring2_clk[4]),
+  .ring7_clk(ring2_clk[5]),
+  .ring8_clk(ring2_clk[6]),
+  .ring9_clk(ring2_clk[7]),
+  .ring2_start(ring2_start),
+  .ring2_trim_a(ring2_trim_a),
+  .ring2_trim_b(ring2_trim_b),
+  .ring2_clkmux(ring2_clkmux)
 );
 
 collapsering_macro ring0 (
@@ -162,6 +182,106 @@ ringosc_macro ring1 (
   .start(ring1_start),
   .trim_a(ring1_trim_a),
   .clkmux(ring1_clkmux)
+);
+
+collapsering_macro ring2 (
+`ifdef USE_POWER_PINS
+  .vccd1(vccd1),  // User area 1 1.8V power
+  .vssd1(vssd1),  // User area 1 digital ground
+`endif
+
+  .clk_out(ring2_clk[0]),
+  .start(ring2_start),
+  .trim_a(ring2_trim_a),
+  .trim_b(ring2_trim_b),
+  .clkmux(ring2_clkmux)
+);
+
+collapsering_macro ring3 (
+`ifdef USE_POWER_PINS
+  .vccd1(vccd1),  // User area 1 1.8V power
+  .vssd1(vssd1),  // User area 1 digital ground
+`endif
+
+  .clk_out(ring2_clk[1]),
+  .start(ring2_start),
+  .trim_a(ring2_trim_a),
+  .trim_b(ring2_trim_b),
+  .clkmux(ring2_clkmux)
+);
+
+collapsering_macro ring4 (
+`ifdef USE_POWER_PINS
+  .vccd1(vccd1),  // User area 1 1.8V power
+  .vssd1(vssd1),  // User area 1 digital ground
+`endif
+
+  .clk_out(ring2_clk[2]),
+  .start(ring2_start),
+  .trim_a(ring2_trim_a),
+  .trim_b(ring2_trim_b),
+  .clkmux(ring2_clkmux)
+);
+
+collapsering_macro ring5 (
+`ifdef USE_POWER_PINS
+  .vccd1(vccd1),  // User area 1 1.8V power
+  .vssd1(vssd1),  // User area 1 digital ground
+`endif
+
+  .clk_out(ring2_clk[3]),
+  .start(ring2_start),
+  .trim_a(ring2_trim_a),
+  .trim_b(ring2_trim_b),
+  .clkmux(ring2_clkmux)
+);
+
+ringosc_macro ring6 (
+`ifdef USE_POWER_PINS
+  .vccd1(vccd1),  // User area 1 1.8V power
+  .vssd1(vssd1),  // User area 1 digital ground
+`endif
+
+  .clk_out(ring2_clk[4]),
+  .start(ring2_start),
+  .trim_a(ring2_trim_a),
+  .clkmux(ring2_clkmux)
+);
+
+ringosc_macro ring7 (
+`ifdef USE_POWER_PINS
+  .vccd1(vccd1),  // User area 1 1.8V power
+  .vssd1(vssd1),  // User area 1 digital ground
+`endif
+
+  .clk_out(ring2_clk[5]),
+  .start(ring2_start),
+  .trim_a(ring2_trim_a),
+  .clkmux(ring2_clkmux)
+);
+
+ringosc_macro ring8 (
+`ifdef USE_POWER_PINS
+  .vccd1(vccd1),  // User area 1 1.8V power
+  .vssd1(vssd1),  // User area 1 digital ground
+`endif
+
+  .clk_out(ring2_clk[6]),
+  .start(ring2_start),
+  .trim_a(ring2_trim_a),
+  .clkmux(ring2_clkmux)
+);
+
+ringosc_macro ring9 (
+`ifdef USE_POWER_PINS
+  .vccd1(vccd1),  // User area 1 1.8V power
+  .vssd1(vssd1),  // User area 1 digital ground
+`endif
+
+  .clk_out(ring2_clk[7]),
+  .start(ring2_start),
+  .trim_a(ring2_trim_a),
+  .clkmux(ring2_clkmux)
 );
 
 endmodule	// user_project_wrapper
