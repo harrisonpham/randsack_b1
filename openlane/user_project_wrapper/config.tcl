@@ -16,7 +16,7 @@
 # Base Configurations. Don't Touch
 # section begin
 
-# YOU ARE NOT ALLOWED TO CHANGE ANY VARIABLES DEFINED IN THE FIXED WRAPPER CFGS 
+# YOU ARE NOT ALLOWED TO CHANGE ANY VARIABLES DEFINED IN THE FIXED WRAPPER CFGS
 source $::env(CARAVEL_ROOT)/openlane/user_project_wrapper_empty/fixed_wrapper_cfgs.tcl
 
 # YOU CAN CHANGE ANY VARIABLES DEFINED IN THE DEFAULT WRAPPER CFGS BY OVERRIDING THEM IN THIS CONFIG.TCL
@@ -71,7 +71,7 @@ set ::env(GLB_RT_MAXLAYER) 5
 set ::env(GLB_RT_OBS)  "li1 0 0 2920 3520"
 
 set ::env(GLB_RT_ALLOW_CONGESTION) 1
-set ::env(GLB_RT_ADJUSTMENT) 0.10
+set ::env(GLB_RT_ADJUSTMENT) 0.20
 # set ::env(ROUTING_OPT_ITERS) 128
 
 # disable pdn check nodes becuase it hangs with multiple power domains.
@@ -94,4 +94,4 @@ set ::env(FILL_INSERTION) 0
 set ::env(TAP_DECAP_INSERTION) 0
 set ::env(CLOCK_TREE_SYNTH) 0
 
-set ::env(ROUTING_CORES) 6
+set ::env(ROUTING_CORES) 10

@@ -15,13 +15,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-set ::env(WB_CLOCK_PERIOD)    "20"
+set ::env(WB_CLOCK_PERIOD)    "25"
 set ::env(WB_CLOCK_PORT)      "wb_clk_i"
 
-set ::env(RING0_CLOCK_PERIOD) "5"
+set ::env(RING0_CLOCK_PERIOD) "10"
 set ::env(RING0_CLOCK_PORT)   "ring0_clk"
 
-set ::env(RING1_CLOCK_PERIOD) "5"
+set ::env(RING1_CLOCK_PERIOD) "10"
 set ::env(RING1_CLOCK_PORT)   "ring1_clk"
 
 if {[info exists ::env(WB_CLOCK_PORT)] && $::env(WB_CLOCK_PORT) != ""} {

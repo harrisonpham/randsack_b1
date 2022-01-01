@@ -33,20 +33,20 @@ set ::env(BASE_SDC_FILE) "$script_dir/base.sdc"
 
 # NOTE: Make sure to add all clocks manually to base.sdc!
 set ::env(CLOCK_PORT) "wb_clk_i ring0_clk ring1_clk"
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "15"
 
 # Various options to tweak if there are slew / hold issues.
-set ::env(FP_CORE_UTIL) 15
-set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) 1
-set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 1
-set ::env(PL_RESIZER_SETUP_SLACK_MARGIN) 0.1
-set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.3
-set ::env(GLB_RESIZER_SETUP_SLACK_MARGIN) 0.1
-set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) 0.3
-set ::env(GLB_RESIZER_HOLD_MAX_BUFFER_PERCENT) 90
-set ::env(PL_RESIZER_HOLD_MAX_BUFFER_PERCENT) 90
-set ::env(GLB_RESIZER_SETUP_MAX_BUFFER_PERCENT) 90
-set ::env(PL_RESIZER_SETUP_MAX_BUFFER_PERCENT) 90
+# set ::env(FP_CORE_UTIL) 15
+# set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) 1
+# set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 1
+# set ::env(PL_RESIZER_SETUP_SLACK_MARGIN) 0.1
+# set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.3
+# set ::env(GLB_RESIZER_SETUP_SLACK_MARGIN) 0.1
+# set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) 0.3
+# set ::env(GLB_RESIZER_HOLD_MAX_BUFFER_PERCENT) 90
+# set ::env(PL_RESIZER_HOLD_MAX_BUFFER_PERCENT) 90
+# set ::env(GLB_RESIZER_SETUP_MAX_BUFFER_PERCENT) 90
+# set ::env(PL_RESIZER_SETUP_MAX_BUFFER_PERCENT) 90
 # set ::env(PL_RESIZER_ALLOW_SETUP_VIOS) 1
 # set ::env(GLB_RESIZER_ALLOW_SETUP_VIOS) 1
 # set ::env(SYNTH_MAX_FANOUT) 4
@@ -59,7 +59,7 @@ set ::env(DIE_AREA) "0 0 500 1000"
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 # set ::env(PL_TIME_DRIVEN) 1
-set ::env(PL_TARGET_DENSITY) 0.4
+set ::env(PL_TARGET_DENSITY) 0.5
 
 # Maximum layer used for routing is metal 4.
 # This is because this macro will be inserted in a top level (user_project_wrapper)
@@ -75,4 +75,4 @@ set ::env(DIODE_INSERTION_STRATEGY) 4
 # If you're going to use multiple power domains, then disable cvc run.
 set ::env(RUN_CVC) 1
 
-set ::env(ROUTING_CORES) 6
+set ::env(ROUTING_CORES) 10
