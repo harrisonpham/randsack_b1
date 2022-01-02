@@ -16,3 +16,4 @@ export OPENLANE_TAG=mpw-3a
 export CARAVEL_LITE=1
 export CARAVEL_BRANCH=mpw-3a
 
+export ICGEN_ROOT=/home/harrison/workspace/icgen/

@@ -1,0 +1,5 @@
+<?php
+
+$RING2_COUNT = 21;
+
+$WB_SLAVE_COUNT = 8 + $RING2_COUNT;

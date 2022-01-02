@@ -1,0 +1,17 @@
+<?
+  require(__DIR__ . '/../../ip/randsack/rtl/randsack.php');
+?>
+
+digitalcore 1000 500 N
+ring0 800 620 N
+ring1 800 800 N
+
+<?
+  for ($i = 0; $i < $RING2_COUNT; $i++) {
+    $c = floor($i / 7);
+    $r = $i % 7;
+?>
+ring<?= $i+2 ?> <?= $c * 360 + 1800 ?> <?= $r * 360 + 620 ?> N
+<?
+  }
+?>

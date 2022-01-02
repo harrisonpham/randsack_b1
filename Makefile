@@ -66,7 +66,7 @@ $(DV_PATTERNS): verify-% : ./verilog/dv/%
 # Openlane Makefile Targets
 BLOCKS = $(shell cd openlane && find * -maxdepth 0 -type d)
 .PHONY: $(BLOCKS)
-$(BLOCKS): %:
+$(BLOCKS): %: icgen_elab
 	export CARAVEL_ROOT=$(CARAVEL_ROOT) && cd openlane && $(MAKE) $*
 	# Hack for mpw-4 openlane to copy the results into the proper locations.
 	# cp -rv openlane/$*/runs/$*/results/final/def/* def/
@@ -76,6 +76,14 @@ $(BLOCKS): %:
 	# cp -rv openlane/$*/runs/$*/results/final/maglef/* maglef/
 	# cp -rv openlane/$*/runs/$*/results/final/spi/* spi/
 	# cp -rv openlane/$*/runs/$*/results/final/verilog/* verilog/
+
+.PHONY: icgen_elab
+icgen_elab:
+	# Regenerate verilog.
+	$(ICGEN_ROOT)/icgen.sh --input_path . --input_pattern '*.vp' --output_extension '.v'
+	$(ICGEN_ROOT)/icgen.sh --input_path . --input_pattern '*.tclp' --output_extension '.tcl' --comment '#'
+	$(ICGEN_ROOT)/icgen.sh --input_path . --input_pattern '*.sdcp' --output_extension '.sdc' --comment '#'
+	$(ICGEN_ROOT)/icgen.sh --input_path . --input_pattern '*.cfgp' --output_extension '.cfg' --comment '#'
 
 # Install caravel
 .PHONY: install
